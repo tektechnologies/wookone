@@ -1,12 +1,14 @@
 import React from 'react';
-
+import Header from './header';
 
 
 class App extends React.Component {
 
   render(){
     return(
-        <h1>Welcome to wookOne!</h1>
+      <div id="app">
+        <Header />
+      </div>  
     )
   }
 }
