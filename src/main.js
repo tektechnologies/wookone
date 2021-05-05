@@ -1,10 +1,11 @@
 import React from 'react';
+import './css/Main.css';
 
 class Main extends React.Component {
   render(){
     return(
 
-        <div className="col-sm-7">
+        <div className="col-sm-7 bottomFeedMargin">
                 
         <div className="row">
           <div className="col-sm-12">
@@ -71,7 +72,58 @@ class Main extends React.Component {
             </div>
           </div>
         </div> 
-        
+        <div className="row">
+          <div className="col-sm-3">
+            <div className="well">
+            <p>John</p>
+            <img src="bird.jpg" className="img-circle" height="55" width="55" alt="Avatar" />
+            </div>
+          </div>
+          <div className="col-sm-9">
+            <div className="well">
+              <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-3">
+            <div className="well">
+            <p>John</p>
+            <img src="bird.jpg" className="img-circle" height="55" width="55" alt="Avatar" />
+            </div>
+          </div>
+          <div className="col-sm-9">
+            <div className="well">
+              <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-3">
+            <div className="well">
+            <p>John</p>
+            <img src="bird.jpg" className="img-circle" height="55" width="55" alt="Avatar" />
+            </div>
+          </div>
+          <div className="col-sm-9">
+            <div className="well">
+              <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-3">
+            <div className="well">
+            <p>John</p>
+            <img src="bird.jpg" className="img-circle" height="55" width="55" alt="Avatar" />
+            </div>
+          </div>
+          <div className="col-sm-9">
+            <div className="well">
+              <p>Just Forgot that I had to mention something about someone to someone about how I forgot something, but now I forgot it. Ahh, forget it! Or wait. I remember.... no I don't.</p>
+            </div>
+          </div>
+        </div>
         
       </div>
     )
