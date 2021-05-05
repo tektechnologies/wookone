@@ -5,13 +5,13 @@ class Main extends React.Component {
   render(){
     return(
 
-        <div className="col-sm-7 bottomFeedMargin">
+        <div className="col-sm-7 bottomMainMargin">
                 
         <div className="row">
           <div className="col-sm-12">
             <div className="panel panel-default text-left">
               <div className="panel-body">
-                <p>Status: Feeling Blue</p>
+                <p>Status: Feeling Hopeful</p>
                 <button type="button" className="btn btn-default btn-sm">
                   <span className="glyphicon glyphicon-thumbs-up"></span> Like
                 </button>     
