@@ -5,7 +5,7 @@ class Footer extends React.Component {
 render() {
   return (
 
-<footer className="container-fluid text-center"><p>Welcome to WookOne!</p></footer>
+<footer className="container-fluid text-center"><h2>Welcome to WookOne</h2></footer>
  
  )
 }
