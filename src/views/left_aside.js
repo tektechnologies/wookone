@@ -30,6 +30,7 @@ render() {
             <p><a href="index.html">Hike a Trail</a></p>
             <p><a href="index.html">Weather</a></p>
             <p><a href="index.html">Find Local Food</a></p>
+            <p><a href="favoriteFood.html">Favorite Foods</a></p>
           </div>
 
     )
