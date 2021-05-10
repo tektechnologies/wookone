@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/LeftAside.css';
+import '../assets/css/LeftAside.css';
 
 class LeftAside extends React.Component {
 render() {
