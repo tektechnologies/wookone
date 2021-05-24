@@ -4,6 +4,7 @@ import Header from '../components/header';
 import RightAside from './right_aside';
 import Main from './main';
 import LeftAside from './left_aside';
+import {Switch, Route} from 'react-router-dom';
 
 
 class App extends React.Component {

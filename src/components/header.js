@@ -1,5 +1,6 @@
 import React from 'react';
 import '../assets/css/Header.css';
+import { NavLink } from 'react-router-dom';
 
 class Header extends React.Component {
 
@@ -19,8 +20,14 @@ class Header extends React.Component {
               </div>
            <div className="collapse navbar-collapse" id="myNavbar">
             <ul className="nav navbar-nav">
-              <li className="active"><a href="index.html">Home</a></li>
-              <li><a href="index.html">Messages</a></li>
+
+             
+              {/*<li className="active"> <a href="index.html">Home</a> </li>*/}
+              <li><NavLink to="/" exact>Home</NavLink></li>
+              
+              {/* <li> <a href="index.html">Messages</a> </li>*/}
+              <li><NavLink to="/" exact>Messages</NavLink></li>
+              
             </ul>
             <form className="navbar-form navbar-right" role="search">
               <div className="form-group input-group">
@@ -33,7 +40,12 @@ class Header extends React.Component {
               </div>
             </form>
       <ul className="nav navbar-nav navbar-right">
-        <li><a href="index.html"><span className="glyphicon glyphicon-user"></span> My Account</a></li>
+        <li>
+        {/*<a href="index.html">*/}
+        <span className="glyphicon glyphicon-user"></span> 
+        <NavLink to="/" exact>My Account</NavLink>
+        {/*My Account</a>*/}
+        </li>
       </ul>
     </div>
   </div>
