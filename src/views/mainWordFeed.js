@@ -1,7 +1,7 @@
 import React from 'react';
-import '../assets/css/Main.css';
+import '../assets/css/MainWordFeed.css';
 
-class Main extends React.Component {
+class MainWordFeed extends React.Component {
   render(){
     return(
 
@@ -129,4 +129,4 @@ class Main extends React.Component {
     )
  }
 }
-export default Main;
+export default MainWordFeed;

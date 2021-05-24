@@ -2,6 +2,7 @@ import React from 'react';
 import '../assets/css/Header.css';
 import { NavLink } from 'react-router-dom';
 
+
 class Header extends React.Component {
 
   render() {
@@ -41,10 +42,12 @@ class Header extends React.Component {
             </form>
       <ul className="nav navbar-nav navbar-right">
         <li>
-        {/*<a href="index.html">*/}
-        <span className="glyphicon glyphicon-user"></span> 
-        <NavLink to="/" exact>My Account</NavLink>
-        {/*My Account</a>*/}
+
+        <NavLink to="/" exact>
+           <span className="glyphicon glyphicon-user"></span>
+             My Account
+        </NavLink>
+      
         </li>
       </ul>
     </div>
