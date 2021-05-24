@@ -1,5 +1,8 @@
 import React from 'react';
 import '../assets/css/LeftAside.css';
+import { NavLink } from 'react-router-dom';
+
+
 
 class LeftAside extends React.Component {
 render() {
@@ -27,10 +30,11 @@ render() {
               <p><strong>Yeew!</strong></p>
               People are looking at your profile. Find out who.
             </div>
-            <p><a href="index.html">Hike a Trail</a></p>
-            <p><a href="index.html">Weather</a></p>
-            <p><a href="index.html">Find Local Food</a></p>
-            <p><a href="favoriteFood.html">Favorite Foods</a></p>
+            <p><NavLink to="/hikeATrail">Hike a Trail</NavLink></p>
+            <p><NavLink to="/weather">Weather</NavLink></p>
+            <p><NavLink to="/yourMovies">Your Movies</NavLink></p>
+            <p><NavLink to="/favoriteFoods">Favorite Foods</NavLink></p>
+            <p><NavLink to="/yelpFood">Find Local Food</NavLink></p>
           </div>
 
     )
