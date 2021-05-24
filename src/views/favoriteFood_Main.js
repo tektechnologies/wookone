@@ -1,5 +1,5 @@
 import React from 'react';
-import FavoriteFoods from '../favoriteFoods.js';
+import FavoriteFoods from '../FavoriteFoods.js';
 
 class FavoriteFood_Main extends React.Component {
   render() {

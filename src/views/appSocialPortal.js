@@ -1,6 +1,4 @@
 import React from 'react';
-import Footer from '../components/footer';
-import Header from '../components/header';
 import RightAside from './Right_aside';
 import MainWordFeed from './MainWordFeed';
 import LeftAside from './Left_aside';
