@@ -43,7 +43,7 @@ class Header extends React.Component {
       <ul className="nav navbar-nav navbar-right">
         <li>
 
-        <NavLink to="/" exact>
+        <NavLink to="/Login" exact>
            <span className="glyphicon glyphicon-user"></span>
              My Account
         </NavLink>
