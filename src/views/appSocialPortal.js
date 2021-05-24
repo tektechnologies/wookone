@@ -1,18 +1,17 @@
 import React from 'react';
 import Footer from '../components/footer';
 import Header from '../components/header';
-import RightAside from './right_aside';
-import MainWordFeed from './mainWordFeed';
-import LeftAside from './left_aside';
-import MainWordFeed from './mainWordFeed';
+import RightAside from './Right_aside';
+import MainWordFeed from './MainWordFeed';
+import LeftAside from './Left_aside';
+import MainWordFeed from './MainWordFeed';
 
 
-class App extends React.Component {
+class AppSocialPortal extends React.Component {
 
   render(){
     return(
       <div id="app">
-        <Header />
         <div className="container text-center">    
         <div className="row">
             <LeftAside />
@@ -20,13 +19,12 @@ class App extends React.Component {
             <RightAside />
         </div>
         </div>
-        <Footer />
       </div>  
     )
   }
 }
 
-export default App;
+export default AppSocialPortal;
 
 
 
