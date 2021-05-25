@@ -1,6 +1,7 @@
 import React from 'react';
 import '../assets/css/Header.css';
 import { NavLink } from 'react-router-dom';
+import DreadLogo from '../assets/Images/wooklogo.jpeg'; 
 
 
 class Header extends React.Component {
@@ -16,7 +17,10 @@ class Header extends React.Component {
                   <span className="icon-bar"></span>
                   <span className="icon-bar"></span>                        
                 </button>
-                <NavLink className="navbar-brand" to="/" exact>Logo</NavLink>
+
+                <NavLink className="navbar-brand" to="/" exact>
+                <img src={DreadLogo} alt="Wook Logo" height="60px" />
+                </NavLink>
 
               </div>
            <div className="collapse navbar-collapse" id="myNavbar">

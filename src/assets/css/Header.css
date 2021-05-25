@@ -5,3 +5,6 @@ header {
   right: 0;
   z-index: 1;
 }
+.navbar {
+  height: 75px;
+}
