@@ -1,8 +1,7 @@
 import React from 'react';
-import RightAside from './Right_aside';
+import RightAside from './RightAside';
 import MainWordFeed from './MainWordFeed';
-import LeftAside from './Left_aside';
-import MainWordFeed from './MainWordFeed';
+import LeftAside from './LeftAside';
 
 
 class AppSocialPortal extends React.Component {

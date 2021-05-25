@@ -3,7 +3,8 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import HomePage from './HomePage';
 import Login from '../components/Login';
-import Register from '../components/Register'
+import Register from '../components/Register';
+import AppSocialPortal from './AppSocialPortal';
 import {Switch, Route} from 'react-router-dom';
 
 
@@ -32,11 +33,11 @@ class App extends React.Component {
                       <Register />
                     </Route>
 
-                 {/*   <Route path="/AppSocialPortal">
+                   <Route path="/AppSocialPortal">
                       <AppSocialPortal />
                     </Route>
 
-                    <Route path="/FavoriteFood_Main">
+                 {/*    <Route path="/FavoriteFood_Main">
                      <FavoriteFood_Main />
                     </Route>
 

@@ -27,7 +27,7 @@ class Header extends React.Component {
               <li><NavLink to="/" exact>Home</NavLink></li>
               
               {/* <li> <a href="index.html">Messages</a> </li>*/}
-              <li><NavLink to="/" exact>Messages</NavLink></li>
+              <li><NavLink to="/AppSocialPortal">Wookin</NavLink></li>
               
             </ul>
             <form className="navbar-form navbar-right" role="search">

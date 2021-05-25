@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/css/MainWordFeed.css';
+import '../assets/css/Main.css';
 
 class MainWordFeed extends React.Component {
   render(){
