@@ -43,11 +43,16 @@ class Header extends React.Component {
       <ul className="nav navbar-nav navbar-right">
         <li>
 
-        <NavLink to="/Login" exact>
+        <NavLink to="/Login">
            <span className="glyphicon glyphicon-user"></span>
              My Account
         </NavLink>
-      
+        </li>
+        <li>
+        <NavLink to="/Register" >
+        <span className="glyphicon glyphicon-user"></span>
+          Register
+     </NavLink>
         </li>
       </ul>
     </div>
