@@ -16,7 +16,7 @@ class Header extends React.Component {
                   <span className="icon-bar"></span>
                   <span className="icon-bar"></span>                        
                 </button>
-                 <a className="navbar-brand" href="index.html">Logo</a>
+                <NavLink className="navbar-brand" to="/" exact>Logo</NavLink>
 
               </div>
            <div className="collapse navbar-collapse" id="myNavbar">

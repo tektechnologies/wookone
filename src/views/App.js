@@ -7,6 +7,10 @@ import Register from '../components/Register';
 import AppSocialPortal from './AppSocialPortal';
 import FavoriteFoodMain from './FavoriteFoodMain';
 import FavoriteFoods from './FavoriteFoods';
+import HikeATrail from './HikeATrail';
+import Weather from './Weather';
+import YelpFood from './YelpFood';
+import YourMovies from './YourMovies';
 import {Switch, Route} from 'react-router-dom';
 
 
@@ -47,37 +51,22 @@ class App extends React.Component {
                     <FavoriteFoods />
                    </Route>
 
-                  {/*   <Route path="/HikeATrail">
+                    <Route path="/HikeATrail">
                      <HikeATrail />
-                    </Route>
-
-                    <Route path="/HomePage">
-                     <HomePage />
-                    </Route>
-
-                    <Route path="/LeftAside">
-                     <LeftAside />
-                    </Route>
-
-                    <Route path="/RightAside">
-                     <RightAside />
-                    </Route>
-
-                    <Route path="/MainWordFeed">
-                     <MainWordFeed />
                     </Route>
 
                     <Route path="/Weather">
                      <Weather />
                     </Route>
 
+                    <Route path="/YelpFood">
+                     <YelpFood />
+                    </Route>
+
                     <Route path="/YourMovies">
                      <YourMovies />
                     </Route>
 
-
-
-*/}
 
 
 
