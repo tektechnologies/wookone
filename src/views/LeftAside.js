@@ -30,11 +30,11 @@ render() {
               <p><strong>Yeew!</strong></p>
               People are looking at your profile. Find out who.
             </div>
-            <p><NavLink to="/hikeATrail">Hike a Trail</NavLink></p>
-            <p><NavLink to="/weather">Weather</NavLink></p>
-            <p><NavLink to="/yourMovies">Your Movies</NavLink></p>
-            <p><NavLink to="/favoriteFoods">Favorite Foods</NavLink></p>
-            <p><NavLink to="/yelpFood">Find Local Food</NavLink></p>
+            <p><NavLink to="/HikeATrail">Hike a Trail</NavLink></p>
+            <p><NavLink to="/Weather">Weather</NavLink></p>
+            <p><NavLink to="/YourMovies">Your Movies</NavLink></p>
+            <p><NavLink to="/FavoriteFoodMain">Favorite Foods</NavLink></p>
+            <p><NavLink to="/YelpFood">Find Local Food</NavLink></p>
           </div>
 
     )

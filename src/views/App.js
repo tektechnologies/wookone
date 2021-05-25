@@ -5,6 +5,8 @@ import HomePage from './HomePage';
 import Login from '../components/Login';
 import Register from '../components/Register';
 import AppSocialPortal from './AppSocialPortal';
+import FavoriteFoodMain from './FavoriteFoodMain';
+import FavoriteFoods from './FavoriteFoods';
 import {Switch, Route} from 'react-router-dom';
 
 
@@ -37,11 +39,15 @@ class App extends React.Component {
                       <AppSocialPortal />
                     </Route>
 
-                 {/*    <Route path="/FavoriteFood_Main">
-                     <FavoriteFood_Main />
+                    <Route path="/FavoriteFoodMain">
+                     <FavoriteFoodMain />
                     </Route>
 
-                    <Route path="/HikeATrail">
+                    <Route path="/FavoriteFoods">
+                    <FavoriteFoods />
+                   </Route>
+
+                  {/*   <Route path="/HikeATrail">
                      <HikeATrail />
                     </Route>
 
