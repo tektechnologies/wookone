@@ -1,4 +1,4 @@
-{
+{ 
   "name": "wookone",
   "version": "0.1.0",
   "private": true,
@@ -26,5 +26,9 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-plugin-react": "^7.1.0"
   }
 }

@@ -14,7 +14,7 @@ class HomePage extends React.Component {
          <div className="panel-body">
              <h1>Login or Register, or dont...IDC</h1>
              <button type="button" className="btn btn-default btn-sm">
-               <span className="glyphicon glyphicon-thumbs-up"></span> Word
+               <span className="glyphicon glyphicon-thumbs-up"></span> Word UP
              </button>
          </div>
         </div>

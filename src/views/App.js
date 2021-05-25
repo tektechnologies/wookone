@@ -30,7 +30,6 @@ class App extends React.Component {
                       <HomePage /> 
                     </Route>
 
-                     
                     <Route path="/Login">
                       <Login />
                     </Route>
@@ -66,11 +65,6 @@ class App extends React.Component {
                     <Route path="/YourMovies">
                      <YourMovies />
                     </Route>
-
-
-
-
-
 
                   </Switch>
               </main>
