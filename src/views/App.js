@@ -12,7 +12,6 @@ import Weather from './Weather';
 import YelpFood from './YelpFood';
 import YourMovies from './YourMovies';
 import {Switch, Route} from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
