@@ -1,16 +1,46 @@
 import React from 'react';
-
+import Card from 'react-bootstrap/Card';
 
 
 
 class FavoriteFoods extends React.Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      favorites: 0
+    }
+  }
+
+
+ addFavoriteCount = () => {
+   this.state({favorites: this.state.favorites + 1});
+ }
+
+
+
+
+
   render() {
     return(
-      <div className='favoriteFood'>
-        <h2>{this.props.title}</h2>
-        <img src={this.props.src} alt={this.props.title} title={this.props.title} />
-        <p>{this.props.description}</p>
-      </div>
+      <Card 
+      style={{width: '18rem'}}
+      bg="dark"
+      text="light"
+      onClick={this.addFavorite}
+      >
+      <Card.Img varitant="top" src={this.props.src} />
+      <Card.Body>
+      <Card.Title>{this.props.title}</Card.Title>
+      <Card.Text>
+           😎 = {this.state.favorites}
+      </Card.Text>
+      <Card.Text> 
+        {this.props.description}
+      </Card.Text>
+
+      </Card.Body>
+      </Card>
     )
   }
 }

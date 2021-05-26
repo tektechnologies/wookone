@@ -99,28 +99,28 @@
   },
   {
     "image_url": "https://picsum.photos/id/429/200/300",
-    "title": "raspberries",
+    "title": "Raspberries",
     "description": "Berry Berry so very...",
     "keyword": "food",
     "animals": 1
   },
   {
     "image_url": "https://picsum.photos/id/431/200/300",
-    "title": "esspresso",
+    "title": "Esspresso",
     "description": "This is where it begins.",
     "keyword": "food",
     "animals": 1
   },
   {
     "image_url": "https://picsum.photos/id/433/200/300",
-    "title": "bear",
+    "title": "Bear",
     "description": "Beary Beary, very Beary...",
     "keyword": "nature",
     "animals": 2
   },
   {
     "image_url": "https://picsum.photos/id/469/200/300",
-    "title": "canoe",
+    "title": "Canoe",
     "description": "This is fun.",
     "keyword": "trail",
     "animals": 3
@@ -134,7 +134,7 @@
   },
   {
     "image_url": "https://picsum.photos/id/491/200/300",
-    "title": "tools",
+    "title": "Tools",
     "description": "This is where building began.",
     "keyword": "technologies",
     "animals": 1
