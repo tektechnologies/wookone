@@ -8,3 +8,15 @@ header {
 .navbar {
   height: 75px;
 }
+
+.container-fluid a {
+  margin-top: 10px;
+}
+
+.container-fluid form {
+  margin-top: 20px;
+}
+
+.container-fluid a img {
+  margin-top: -20px;
+}
