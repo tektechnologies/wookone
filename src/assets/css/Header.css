@@ -22,3 +22,24 @@ header {
 }
 
 
+.bg-navbar {
+  background-color: #40531B;
+}
+
+nav .navbar-nav  a {
+  color: #D7F9F1 !important;
+  }
+.bg-custom-button {
+    background-color: #D7F9F1;
+    color: #40531B; 
+}
+
+.btn-primary:hover,
+.btn-primary:focus, 
+.btn-primary:active, 
+.btn-primary.active, 
+.open>.dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #7AA095;
+  border-color: #285e8e; /*set the color you want here*/
+}

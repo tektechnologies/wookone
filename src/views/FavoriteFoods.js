@@ -23,6 +23,7 @@ class FavoriteFoods extends React.Component {
 
   render() {
     return(
+    
       <Card 
       style={{width: '18rem'}}
       bg="dark"
@@ -41,6 +42,8 @@ class FavoriteFoods extends React.Component {
 
       </Card.Body>
       </Card>
+      
+      
     )
   }
 }
