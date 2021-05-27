@@ -1,25 +1,38 @@
 import React from 'react';
 import '../assets/css/HomePage.css';
-
+import {
+  Container, 
+  Row, 
+  Col,
+  Button,
+  Jumbotron } from 'react-bootstrap';
 
 
 class HomePage extends React.Component {
 
   render(){
     return(
+
       <div>
-      <div className="row">
-      <div className="col-sm-12 content">
-        <div className="panel panel-default text-left">
-         <div className="panel-body">
-             <h1>Login or Register, or dont...IDC</h1>
-             <button type="button" className="btn btn-default btn-sm">
-               <span className="glyphicon glyphicon-thumbs-up"></span> Word UP
-             </button>
-         </div>
-        </div>
-       </div>
-     </div>  
+          <Container fluid>
+            <Row>
+              <Col>
+              <Jumbotron >
+             
+              <h1>Login or Register, or dont...just Stay Pysched!</h1>
+              <p>
+                You have found wookOne, are you wook enough? 
+              </p>
+              <p>
+                <Button variant="primary">Learn more</Button>
+              </p>
+              
+            </Jumbotron>
+              
+            
+              </Col>
+            </Row>
+          </Container>
       </div>
     );
   }
