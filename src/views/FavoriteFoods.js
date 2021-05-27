@@ -33,7 +33,7 @@ class FavoriteFoods extends React.Component {
       <Card.Body>
       <Card.Title>{this.props.title}</Card.Title>
       <Card.Text>
-           😎 = {this.state.favorites}
+           <span role="img">😎</span> = {this.state.favorites}
       </Card.Text>
       <Card.Text> 
         {this.props.description}
