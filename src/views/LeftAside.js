@@ -1,6 +1,7 @@
 import React from 'react';
 import '../assets/css/LeftAside.css';
 import { NavLink } from 'react-router-dom';
+import {Col} from 'bootstrap';
 
 
 
@@ -9,7 +10,7 @@ render() {
   return (
 
 
-<div className="col-sm-3 well leftAsideMargin">
+<Col className="well leftAsideMargin">
             <div className="well">
               <p><a href="index.html">My Profile</a></p>
               <img src="bird.jpg" className="img-circle" height="65" width="65" alt="Avatar" />
@@ -35,7 +36,7 @@ render() {
             <p><NavLink to="/YourMovies">Your Movies</NavLink></p>
             <p><NavLink to="/FavoriteFoodMain">Favorite Foods</NavLink></p>
             <p><NavLink to="/YelpFood">Find Local Food</NavLink></p>
-          </div>
+ </Col>
 
     )
 }
