@@ -13,8 +13,8 @@ class AppSocialPortal extends React.Component {
         <Container>
           <Row>
             <LeftAside />
-           {/* <MainWordFeed />
-            <RightAside />*/} 
+            <MainWordFeed />
+            <RightAside />
           </Row>
         </Container>
       </div>  
