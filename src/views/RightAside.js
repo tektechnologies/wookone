@@ -3,7 +3,7 @@ import React from 'react';
 class RightAside extends React.Component {
 render() {
   return (
-
+    <Col>3 of 3</Col>
     <div className="col-sm-2 well">
         <div className="thumbnail">
           <p>Upcoming Events:</p>
