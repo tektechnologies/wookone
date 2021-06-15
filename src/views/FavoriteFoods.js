@@ -14,7 +14,7 @@ class FavoriteFoods extends React.Component {
 
 
  addFavoriteCount = () => {
-   this.state({favorites: this.state.favorites + 1});
+   this.setState({favorites: this.state.favorites + 1});
  }
 
 
@@ -28,7 +28,7 @@ class FavoriteFoods extends React.Component {
       style={{width: '18rem'}}
       bg="dark"
       text="light"
-      onClick={this.addFavorite}
+      onClick={this.addFavoriteCount}
       >
       <Card.Img varitant="top" src={this.props.src} />
       <Card.Body>
