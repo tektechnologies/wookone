@@ -10,7 +10,7 @@ class AppSocialPortal extends React.Component {
   render(){
     return(
       <div id="app">
-        <Container>
+        <Container fluid>
           <Row>
             <LeftAside />
             <MainWordFeed />

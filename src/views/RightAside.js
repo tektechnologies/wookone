@@ -4,8 +4,7 @@ import {Col, Card, ListGroupItem, ListGroup} from 'react-bootstrap';
 class RightAside extends React.Component {
 render() {
   return (
-         
-    <Col>
+    <Col xs={3}>
     <Card style={{ width: '18rem' }}>
     {/* <Card.Img variant="top" src="Images/wooklogo.jpeg" />*/} 
       <Card.Body>

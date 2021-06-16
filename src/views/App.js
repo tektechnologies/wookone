@@ -21,10 +21,6 @@ class App extends React.Component {
     return(
       <div id="app">
         <Header />
-        <div className="container text-center">  
-
-        <div className="row">
-
                <main>
                   <Switch>
                     <Route path="/" exact>
@@ -71,9 +67,6 @@ class App extends React.Component {
 
                   </Switch>
               </main>
-
-            </div>
-           </div>
          <Footer />
       </div>  
     )
