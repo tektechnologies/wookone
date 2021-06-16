@@ -21,6 +21,8 @@ class App extends React.Component {
     return(
       <div id="app">
         <Header />
+       
+
                <main>
                   <Switch>
                     <Route path="/" exact>
