@@ -21,9 +21,7 @@ class App extends React.Component {
     return(
       <div id="app">
         <Header />
-        <div className="container text-center">  
-
-        <div className="row">
+       
 
                <main>
                   <Switch>
@@ -67,11 +65,10 @@ class App extends React.Component {
                      <YourMovies />
                     </Route>
 
+                    
+
                   </Switch>
               </main>
-
-            </div>
-           </div>
          <Footer />
       </div>  
     )
