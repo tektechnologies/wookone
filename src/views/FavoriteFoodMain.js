@@ -29,6 +29,19 @@ displayAsModel = (foodName) => {
       <div>
       <CardColumns>
        
+      <FoodMain 
+      allFoods={this.state.allFavoriteFoods}
+      displayAsModal={this.displayAsModel}
+      />
+
+      <SelectedFavoriteFood 
+      selectedFood={this.state.allFavoriteFoods}
+      show={this.state.displayModal}
+      handleClose={this.handleClose}
+      />
+
+
+
       </CardColumns>
       </div>
       
