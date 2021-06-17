@@ -1,6 +1,8 @@
 import React from 'react';
-import FavoriteFoods from './FavoriteFoods';
+import SelectedFood from './SelectedFood';
+import FoodMain from './FoodMain';
 import jsonData from '../assets/data/data.json';
+
 import CardColumns from 'react-bootstrap/CardColumns';
 
 
@@ -34,7 +36,7 @@ displayAsModel = (foodName) => {
       displayAsModal={this.displayAsModel}
       />
 
-      <SelectedFavoriteFood 
+      <SelectedFood 
       selectedFood={this.state.allFavoriteFoods}
       show={this.state.displayModal}
       handleClose={this.handleClose}
