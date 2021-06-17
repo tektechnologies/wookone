@@ -2,7 +2,6 @@ import React from 'react';
 import SelectedFood from './SelectedFood';
 import FoodMain from './FoodMain';
 import jsonData from '../assets/data/data.json';
-
 import CardColumns from 'react-bootstrap/CardColumns';
 
 
@@ -12,8 +11,9 @@ class FavoriteFoodMain extends React.Component {
     super(props);
     this.state = {
       allFavoriteFoods: jsonData,
-      selectedFavoriteFood: {},
-      displayModal: false
+      displayModal: false,
+      selectedFavoriteFood: {}
+     
     }
   }
   
@@ -29,10 +29,10 @@ displayAsModel = (foodName) => {
   render() {
     return(
       <div>
-      <CardColumns>
+      
        
       <FoodMain 
-      allFoods={this.state.allFavoriteFoods}
+      allFavoriteFoods={this.state.allFavoriteFoods}
       displayAsModal={this.displayAsModel}
       />
 
@@ -44,7 +44,7 @@ displayAsModel = (foodName) => {
 
 
 
-      </CardColumns>
+      
       </div>
       
 

@@ -9,7 +9,7 @@ class FoodMain extends React.Component {
   render(){
     return(
          <CardColumns>
-         { this.props.allFavoriteFoods.map((food, idx) => (
+         {this.props.allFavoriteFoods.map((food, idx) => (
           
           <FavoriteFoods 
             key={idx}
