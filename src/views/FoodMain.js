@@ -8,7 +8,20 @@ class FoodMain extends React.Component {
 
   render(){
     return(
-
+         <CardColumns>
+         { this.props.allFavoriteFoods.map((food, idx) => (
+          
+          <FavoriteFoods 
+            key={idx}
+            index={idx}
+            src={food.image_url}
+            title={food.title}
+            description={food.description}
+            displayAsModal={this.props.displayAsModal}
+         />
+          
+    ))}
+         </CardColumns>
     )
   }
 }
