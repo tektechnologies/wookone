@@ -10,11 +10,17 @@ class FavoriteFoodMain extends React.Component {
     super(props);
     this.state = {
       allFavoriteFoods: jsonData,
-      selectedFavoriteFood: {}
+      selectedFavoriteFood: {},
+      displayModal: false
     }
   }
   
+displayAsModel = (foodName) => {
+  {/**find the title from the json set to const */}
+  const selectedFavoriteFood = jsonData.find(favoriteFood => favoriteFood.title === foodName);
+  this.setState({selectedFavoriteFood, displayModal: true });
 
+}
 
 
 
@@ -22,7 +28,7 @@ class FavoriteFoodMain extends React.Component {
     return(
       <div>
       <CardColumns>
-
+       
       </CardColumns>
       </div>
       
