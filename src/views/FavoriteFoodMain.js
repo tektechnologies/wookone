@@ -16,7 +16,7 @@ class FavoriteFoodMain extends React.Component {
     }
   }
   
-displayAsModel = (foodName) => {
+displayAsModal = (foodName) => {
   const selectedFavoriteFood = jsonData.find(favoriteFood => favoriteFood.title === foodName);
   this.setState({selectedFavoriteFood, displayModal: true });
 
@@ -31,7 +31,7 @@ displayAsModel = (foodName) => {
        
       <FoodMain 
       allFavoriteFoods={this.state.allFavoriteFoods}
-      displayAsModal={this.displayAsModel}
+      displayAsModal={this.displayAsModal}
       />
 
       <SelectedFood 
