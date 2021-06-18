@@ -10,6 +10,8 @@ class SelectedFood extends React.Component {
 
 render(){
   return (
+    <Modal show={this.props.show} 
+           onHide={this.props.handleClose}>
     <Modal.Dialog>
       <Modal.Header closeButton>
         <Modal.Title>{this.props.selectedFood.title}</Modal.Title>
@@ -33,7 +35,7 @@ render(){
         variant="secondary">Close</Button>
       </Modal.Footer>
     </Modal.Dialog>
-
+    </Modal>
 
   )
  }

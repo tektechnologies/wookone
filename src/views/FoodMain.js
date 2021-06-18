@@ -5,7 +5,6 @@ import FavoriteFoods from './FavoriteFoods';
 
 class FoodMain extends React.Component {
 
-
   render(){
     return(
          <CardColumns>
