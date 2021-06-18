@@ -14,18 +14,21 @@ render(){
            onHide={this.props.handleClose}>
     <Modal.Dialog>
       <Modal.Header closeButton>
-        <Modal.Title>{this.props.selectedFood.title}</Modal.Title>
+        <Modal.Title>{this.props.selectedFavoriteFood.title}</Modal.Title>
       </Modal.Header>
     
       <Modal.Body>
-      <Card bg="dark" text="light" onClick={this.displayAsModal}
+      <Card
+       bg="dark"
+       text="light" 
+       onClick={this.displayAsModal}
       >
-      <Card.Img variant="top" alt={this.props.selectedFood.title} src={this.props.selectedFood.image_url}
+      <Card.Img variant="top" alt={this.props.selectedFavoriteFood.title} src={this.props.selectedFavoriteFood.image_url}
       />
       
       <Card.Body>
-        <Card.Title>{this.props.selectedFood.title}</Card.Title>
-        <Card.Text>{this.props.selectedFood.description}</Card.Text>
+        <Card.Title>{this.props.selectedFavoriteFood.title}</Card.Title>
+        <Card.Text>{this.props.selectedFavoriteFood.description}</Card.Text>
       </Card.Body>
       </Card>
       </Modal.Body>
