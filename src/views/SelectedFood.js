@@ -34,7 +34,7 @@ render(){
       </Modal.Body>
     
       <Modal.Footer>
-      <Button onClick={this.props.handlClose}
+      <Button onClick={this.props.handleClose}
         variant="secondary">Close</Button>
       </Modal.Footer>
     </Modal.Dialog>
