@@ -10,7 +10,7 @@ class FavoriteFoodMain extends React.Component {
     super(props);
     this.state = {
       allFavoriteFoods: jsonData,
-      displayModal: false,
+      displayAsModal: false,
       selectedFavoriteFood: {}
      
     }
@@ -18,7 +18,7 @@ class FavoriteFoodMain extends React.Component {
   
 displayAsModal = (foodName) => {
   const selectedFavoriteFood = jsonData.find(favoriteFood => favoriteFood.title === foodName);
-  this.setState({selectedFavoriteFood, displayModal: true });
+  this.setState({selectedFavoriteFood, displayAsModal: true });
 
 }
 
@@ -39,7 +39,7 @@ handleClose = () => {
 
       <SelectedFood 
       selectedFood={this.state.allFavoriteFoods}
-      show={this.state.displayModal}
+      show={this.state.displayAsModal}
       handleClose={this.handleClose}
       />
 
