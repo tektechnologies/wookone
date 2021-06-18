@@ -22,6 +22,9 @@ displayAsModal = (foodName) => {
 
 }
 
+handleClose = () => {
+  this.setState({ displayAsModal: false})
+}
 
 
   render() {
