@@ -2,7 +2,6 @@ import React from 'react';
 import SelectedFood from './SelectedFood';
 import FoodMain from './FoodMain';
 import jsonData from '../assets/data/data.json';
-import CardColumns from 'react-bootstrap/CardColumns';
 
 
 class FavoriteFoodMain extends React.Component {
@@ -18,7 +17,6 @@ class FavoriteFoodMain extends React.Component {
   }
   
 displayAsModel = (foodName) => {
-  {/**find the title from the json set to const */}
   const selectedFavoriteFood = jsonData.find(favoriteFood => favoriteFood.title === foodName);
   this.setState({selectedFavoriteFood, displayModal: true });
 

@@ -16,7 +16,6 @@ class FavoriteFoods extends React.Component {
 
  addFavoriteCount = () => {
    this.setState({favorites: this.state.favorites + 1});
-   {/**passing title props to parent component Favorite Food Main through function call*/}
    this.props.displayAsModal(this.props.title);
  }
 
