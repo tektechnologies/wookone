@@ -38,8 +38,8 @@ handleClose = () => {
       />
 
       <SelectedFood 
-      selectedFood={this.state.allFavoriteFoods}
-      show={this.state.displayAsModal}
+      selectedFavoriteFood={this.state.selectedFavoriteFood}
+      show={this.state.displayModal}
       handleClose={this.handleClose}
       />
 
