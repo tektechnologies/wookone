@@ -36,8 +36,7 @@
   },
   "devDependencies": {
     "eslint": "^3.19.0",
-    "eslint-plugin-react": "^7.1.0",
-    "node_env": "production"
+    "eslint-plugin-react": "^7.1.0"
 
   }
 }
