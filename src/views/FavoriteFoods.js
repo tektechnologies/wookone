@@ -1,4 +1,5 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 
 
@@ -15,6 +16,7 @@ class FavoriteFoods extends React.Component {
 
  addFavoriteCount = () => {
    this.setState({favorites: this.state.favorites + 1});
+   this.props.displayAsModal(this.props.title);
  }
 
 

@@ -19,7 +19,7 @@ class HomePage extends React.Component {
             <Row>
               <Col>
                 <Jumbotron >
-                    <h1>Login or Register, or dont...just Stay Pysched!</h1>
+                    <h1>Login or Register, or dont...just Stay Psyched!</h1>
                     <p>You have found wookOne, are you wook enough?</p>
                     <p><Button variant="primary">Learn more</Button></p>
                 </Jumbotron>
