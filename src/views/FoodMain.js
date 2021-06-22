@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CardColumns from 'react-bootstrap/CardColumns';
-import FavoriteFoods from './FavoriteFoods';
+import FavoriteFoods from './FavoriteImages';
 import {Form}  from 'react-bootstrap';
 import jsonData from '../assets/data/data.json'; 
 
