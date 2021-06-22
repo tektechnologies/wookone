@@ -5,14 +5,14 @@ import FavoriteImages from './FavoriteImages';
 import {Form}  from 'react-bootstrap';
 import jsonData from '../assets/data/data.json'; 
 
-{/** So the above renders but this doesnt
+/** So the above renders but this doesnt
   import {Form}  from 'react-bootstrap/Form';
 
   But this does work:
   import Form  from 'react-bootstrapForm';
 
   not sure why? 
-*/}
+*/
 
 
 
