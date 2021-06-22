@@ -26,6 +26,11 @@ handleClose = () => {
   this.setState({ displayModal: false})
 }
 
+updateChoosenpaths = (choosenPaths) => {
+  this.setState({choosenPaths})
+}
+
+
 
   render() {
     return(
@@ -35,6 +40,7 @@ handleClose = () => {
       <FoodMain 
       allFavoriteFoods={this.state.allFavoriteFoods}
       displayAsModal={this.displayAsModal}
+      displayFilteredImages={this.updateChoosenPaths}
       />
 
       <SelectedFood 
