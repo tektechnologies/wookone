@@ -21,7 +21,7 @@ import jsonData from '../assets/data/data.json';
 
 
 
-class FoodMain extends React.Component {
+class ImageMain extends React.Component {
 
  
   pathFinder = (event) => {
@@ -83,4 +83,4 @@ class FoodMain extends React.Component {
   }
 }
 
-export default FoodMain;
+export default ImageMain;
