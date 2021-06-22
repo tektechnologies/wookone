@@ -5,8 +5,8 @@ import HomePage from './HomePage';
 import Login from '../components/Login';
 import Register from '../components/Register';
 import AppSocialPortal from './AppSocialPortal';
-import FavoriteFoodMain from './FavoriteFoodMain';
-import FavoriteFoods from './FavoriteFoods';
+import FavoriteImageMain from './FavoriteImageMain';
+import FavoriteImages from './FavoriteImages';
 import HikeATrail from './HikeATrail';
 import Weather from './Weather';
 import YelpFood from './YelpFood';
@@ -41,12 +41,12 @@ class App extends React.Component {
                       <AppSocialPortal />
                     </Route>
 
-                    <Route path="/FavoriteFoodMain">
-                     <FavoriteFoodMain />
+                    <Route path="/FavoriteImageMain">
+                     <FavoriteImageMain />
                     </Route>
 
-                    <Route path="/FavoriteFoods">
-                    <FavoriteFoods />
+                    <Route path="/FavoriteImages">
+                    <FavoriteImages />
                    </Route>
 
                     <Route path="/HikeATrail">

@@ -14,7 +14,7 @@ render(){
            onHide={this.props.handleClose}>
     <Modal.Dialog>
       <Modal.Header closeButton>
-        <Modal.Title>{this.props.selectedFavoriteImage.title}{/** this.props.selectedFavoriteFood.title */}</Modal.Title>
+        <Modal.Title>{this.props.selectedFavoriteImages.title}{/** this.props.selectedFavoriteFood.title */}</Modal.Title>
       </Modal.Header>
     
       <Modal.Body>
@@ -23,12 +23,12 @@ render(){
        text="light" 
        onClick={this.displayAsModal}
       >
-      <Card.Img variant="top" alt={this.props.selectedFavoriteImage.title} src={this.props.selectedFavoriteImage.image_url}
+      <Card.Img variant="top" alt={this.props.selectedFavoriteImages.title} src={this.props.selectedFavoriteImages.image_url}
       />
       
       <Card.Body>
-        <Card.Title>{this.props.selectedFavoriteImage.title}</Card.Title>
-        <Card.Text>{this.props.selectedFavoriteImage.description}</Card.Text>
+        <Card.Title>{this.props.selectedFavoriteImages.title}</Card.Title>
+        <Card.Text>{this.props.selectedFavoriteImages.description}</Card.Text>
       </Card.Body>
       </Card>
       </Modal.Body>

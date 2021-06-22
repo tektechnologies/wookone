@@ -67,7 +67,7 @@ class ImageMain extends React.Component {
           </Form>
 
           <CardColumns>
-            {this.props.allFavoriteFoods.map((favoriteImage, idx) => (
+            {this.props.allFavoriteImages.map((favoriteImage, idx) => (
               <FavoriteImages
                 key={idx}
                 index={idx}
