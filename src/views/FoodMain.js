@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CardColumns from 'react-bootstrap/CardColumns';
-import FavoriteFoods from './FavoriteImages';
+import FavoriteImages from './FavoriteImages';
 import {Form}  from 'react-bootstrap';
 import jsonData from '../assets/data/data.json'; 
 
@@ -67,13 +67,13 @@ class FoodMain extends React.Component {
           </Form>
 
           <CardColumns>
-            {this.props.allFavoriteFoods.map((food, idx) => (
-              <FavoriteFoods 
+            {this.props.allFavoriteFoods.map((favoriteImage, idx) => (
+              <FavoriteImages
                 key={idx}
                 index={idx}
-                src={food.image_url}
-                title={food.title}
-                description={food.description}
+                src={favoriteImage.image_url}
+                title={favoriteImage.title}
+                description={favoriteImage.description}
                 displayAsModal={this.props.displayAsModal}
             />
                ))}
