@@ -30,7 +30,7 @@ render() {
                       <Card.Link href="/HikeATrail">Hike a Trail</Card.Link>
                       <Card.Link href="/Weather">Weather</Card.Link>
                       <Card.Link href="/YourMovies">Your Movies</Card.Link>
-                      <Card.Link href="/FavoriteFoodMain">Favorite Foods</Card.Link>
+                      <Card.Link href="/FavoriteImageMain">Favorite Images</Card.Link>
                       <Card.Link href="/YelpFood">Find Local Food</Card.Link>
                 </Card.Body>
             </Card>
