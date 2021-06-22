@@ -1,5 +1,5 @@
 import React from 'react';
-import SelectedFood from './SelectedFood';
+import SelectedFood from './SelectedImage';
 import FoodMain from './FoodMain';
 import jsonData from '../assets/data/data.json';
 

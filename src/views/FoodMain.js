@@ -54,8 +54,7 @@ class FoodMain extends React.Component {
           <Form>
             <Form.Group>
               <Form.Label>What World?</Form.Label>
-              <Form.Control as="select"
-              onChange={this.pathFinder}> 
+              <Form.Control as="select" onChange={this.pathFinder}> 
                 <option value="">All Paths</option>
                 <option value=""></option>
                 <option value="food">Food</option>
