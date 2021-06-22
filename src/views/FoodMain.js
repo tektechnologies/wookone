@@ -2,9 +2,16 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CardColumns from 'react-bootstrap/CardColumns';
 import FavoriteFoods from './FavoriteFoods';
-import { Form } from 'react-bootstrap/Form';
+import {Form}  from 'react-bootstrap';
 
+{/** So the above renders but this doesnt
+  import {Form}  from 'react-bootstrap/Form';
 
+  But this does work:
+  import Form  from 'react-bootstrapForm';
+
+  not sure why? 
+*/}
 class FoodMain extends React.Component {
 
  
