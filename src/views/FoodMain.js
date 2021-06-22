@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CardColumns from 'react-bootstrap/CardColumns';
 import FavoriteFoods from './FavoriteFoods';
 import {Form}  from 'react-bootstrap';
+import jsonData from '../assets/data/data.json'; 
+
 {/** So the above renders but this doesnt
   import {Form}  from 'react-bootstrap/Form';
 
@@ -11,7 +13,6 @@ import {Form}  from 'react-bootstrap';
 
   not sure why? 
 */}
-import jsonData from '../assets/data/data.json'; 
 
 
 
@@ -24,13 +25,23 @@ class FoodMain extends React.Component {
 
  
   pathFinder = (event) => {
+    console.log(event.target.value);
+
     const choosenPath = event.target.value;
     let pathGallery = jsonData;
+
+    console.log('choosen path: ',choosenPath);
+
     if(choosenPath){
-      pathGallery = jsonData.filter((path) => {
-        path.keyword === choosenPath;
-      });
+
+      console.log('choosen path: in the if', choosenPath);
+      console.log(jsonData);
+
+      pathGallery = jsonData.filter((path) => 
+        path.keyword === choosenPath);
+        
     }
+    console.log('this shows the filtered json data', pathGallery);
     this.props.displayFilteredImages(pathGallery);
   };
 
@@ -44,7 +55,7 @@ class FoodMain extends React.Component {
             <Form.Group>
               <Form.Label>What World?</Form.Label>
               <Form.Control as="select"
-              onChange={this.filter}> 
+              onChange={this.pathFinder}> 
                 <option value="">All Paths</option>
                 <option value=""></option>
                 <option value="food">Food</option>

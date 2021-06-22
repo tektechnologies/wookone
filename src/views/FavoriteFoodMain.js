@@ -26,8 +26,8 @@ handleClose = () => {
   this.setState({ displayModal: false})
 }
 
-updateChoosenpaths = (choosenPaths) => {
-  this.setState({choosenPaths})
+updateChoosenPaths = (allFavoriteFoods) => {
+  this.setState({allFavoriteFoods})
 }
 
 
