@@ -31,8 +31,9 @@ nav .navbar-nav  a {
   font-size: 1.25em;
   }
 .bg-custom-button {
-    background-color: #D7F9F1 !important;
-    color: #40531B !important; 
+    background-color: #AFBC88 !important;
+    color: #D7F9F1 !important; 
+    border-color: #D7F9F1 !important;
 }
 
 .btn-primary:hover,
@@ -41,6 +42,6 @@ nav .navbar-nav  a {
 .btn-primary.active, 
 .open>.dropdown-toggle.btn-primary {
   color: #fff;
-  background-color: #7AA095;
-  border-color: #285e8e; /*set the color you want here*/
+  background-color: #AFBC88;
+  border-color: #D7F9F1; /*set the color you want here*/
 }
