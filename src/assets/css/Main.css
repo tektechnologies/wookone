@@ -4,3 +4,7 @@
 .container {
   margin-top: 75px;
 }
+
+.imageContainer {
+  margin: 0 auto;
+}

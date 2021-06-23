@@ -26,7 +26,7 @@ class Header extends React.Component {
 
             <Form inline>
               <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-              <Button className="bg-custom-button" variant="outline-success">Search</Button>
+              <Button className="bg-custom-button" variant="outline-info">Search</Button>
             </Form>
 
           </Navbar.Collapse>

@@ -3,7 +3,6 @@ import SelectedImage from './SelectedImage';
 import ImageMain from './ImageMain';
 import jsonData from '../assets/data/data.json';
 
-
 class FavoriteImageMain extends React.Component {
 
   constructor(props){
@@ -36,6 +35,7 @@ updateChoosenPaths = (allFavoriteImages) => {
     return(
       <div>
       
+
        
       <ImageMain 
       allFavoriteImages={this.state.allFavoriteImages}
