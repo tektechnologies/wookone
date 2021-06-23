@@ -54,7 +54,7 @@ class ImageMain extends React.Component {
         <div className="imageContainer">
           <Form>
             <Form.Group>
-              <Form.Label>What World?</Form.Label>
+              <Form.Label><h1>What Worlds Inspire you?</h1></Form.Label>
               <Form.Control as="select" onChange={this.pathFinder}> 
                 <option value="">All Paths</option>
                 <option value=""></option>
