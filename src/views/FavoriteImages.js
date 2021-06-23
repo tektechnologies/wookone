@@ -27,22 +27,22 @@ class FavoriteImages extends React.Component {
     return(
     
       <Card 
-      style={{width: '18rem'}}
+      style={{width: '25rem'}}
       bg="dark"
       text="light"
+      className="p-3"
       onClick={this.addFavoriteCount}
       >
-      <Card.Img varitant="top" src={this.props.src} />
-      <Card.Body>
-      <Card.Title>{this.props.title}</Card.Title>
-      <Card.Text>
-           <span role="img" aria-label="Sunglasses">😎</span> = {this.state.favorites}
-      </Card.Text>
-      <Card.Text> 
-        {this.props.description}
-      </Card.Text>
-
-      </Card.Body>
+        <Card.Img varitant="top" src={this.props.src} />
+          <Card.Body>
+            <Card.Title>{this.props.title}</Card.Title>
+              <Card.Text>
+                  <span role="img" aria-label="Sunglasses">😎</span> = {this.state.favorites}
+              </Card.Text>
+              <Card.Text> 
+                {this.props.description}
+              </Card.Text>
+          </Card.Body>
       </Card>
       
       

@@ -4,6 +4,7 @@ import CardColumns from 'react-bootstrap/CardColumns';
 import FavoriteImages from './FavoriteImages';
 import {Form}  from 'react-bootstrap';
 import jsonData from '../assets/data/data.json'; 
+import '../assets/css/Main.css';
 
 /** So the above renders but this doesnt
   import {Form}  from 'react-bootstrap/Form';
@@ -50,10 +51,10 @@ class ImageMain extends React.Component {
 
   render(){
     return(
-        <div>
+        <div className="imageContainer">
           <Form>
             <Form.Group>
-              <Form.Label>What World?</Form.Label>
+              <Form.Label><h1>What Worlds Inspire you?</h1></Form.Label>
               <Form.Control as="select" onChange={this.pathFinder}> 
                 <option value="">All Paths</option>
                 <option value=""></option>
