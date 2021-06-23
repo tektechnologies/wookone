@@ -28,10 +28,11 @@ header {
 
 nav .navbar-nav  a {
   color: #D7F9F1 !important;
+  font-size: 1.25em;
   }
 .bg-custom-button {
-    background-color: #D7F9F1;
-    color: #40531B; 
+    background-color: #D7F9F1 !important;
+    color: #40531B !important; 
 }
 
 .btn-primary:hover,
