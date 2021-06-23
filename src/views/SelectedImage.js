@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card';
 
 
 
-class SelectedFood extends React.Component {
+class SelectedImage extends React.Component {
 
 render(){
   return (
@@ -14,7 +14,7 @@ render(){
            onHide={this.props.handleClose}>
     <Modal.Dialog>
       <Modal.Header closeButton>
-        <Modal.Title>{this.props.selectedFavoriteFood.title}</Modal.Title>
+        <Modal.Title>{this.props.selectedFavoriteImages.title}{/** this.props.selectedFavoriteFood.title */}</Modal.Title>
       </Modal.Header>
     
       <Modal.Body>
@@ -23,12 +23,12 @@ render(){
        text="light" 
        onClick={this.displayAsModal}
       >
-      <Card.Img variant="top" alt={this.props.selectedFavoriteFood.title} src={this.props.selectedFavoriteFood.image_url}
+      <Card.Img variant="top" alt={this.props.selectedFavoriteImages.title} src={this.props.selectedFavoriteImages.image_url}
       />
       
       <Card.Body>
-        <Card.Title>{this.props.selectedFavoriteFood.title}</Card.Title>
-        <Card.Text>{this.props.selectedFavoriteFood.description}</Card.Text>
+        <Card.Title>{this.props.selectedFavoriteImages.title}</Card.Title>
+        <Card.Text>{this.props.selectedFavoriteImages.description}</Card.Text>
       </Card.Body>
       </Card>
       </Modal.Body>
@@ -44,4 +44,4 @@ render(){
  }
 }
 
-export default SelectedFood;
+export default SelectedImage;

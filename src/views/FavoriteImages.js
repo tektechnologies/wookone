@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 
 
 
-class FavoriteFoods extends React.Component {
+class FavoriteImages extends React.Component {
 
   constructor(props){
     super(props);
@@ -50,4 +50,4 @@ class FavoriteFoods extends React.Component {
   }
 }
 
-export default FavoriteFoods;
+export default FavoriteImages;
