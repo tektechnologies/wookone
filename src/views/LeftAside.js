@@ -8,11 +8,11 @@ class LeftAside extends React.Component {
 render() {
   return (
     
-          <Col xs={3}>
-              <Card style={{ width: '18rem' }}>
+          <Col>
+              <Card>
                 {/* <Card.Img variant="top" src="Images/wooklogo.jpeg" /> */}
                 <Card.Body>
-                      <Card.Title>Card Title</Card.Title>
+                      <Card.Title>getWook</Card.Title>
                     <Card.Body>
                       <Card.Link href="/">My Profile</Card.Link>
                     </Card.Body>
