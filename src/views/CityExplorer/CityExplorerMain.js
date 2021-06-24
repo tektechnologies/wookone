@@ -12,6 +12,9 @@ constructor(props) {
 
 
 
+methodName = (params) => {
+  
+}
 
 
 
