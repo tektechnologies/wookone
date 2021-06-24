@@ -9,52 +9,41 @@ export class CityExplorerMain extends Component {
 
 constructor(props) {
   super(props)
-
   this.state = {
+     displaySearchResults: false,
      locationObject: location,
      restaurants: restaurants
   }
 }
 
-
-
 handleLocationSearch = (event) => {
   event.preventDefault();
+  {/** add set state to update view after search */}
+  this.setState({displaySearchResults: true});
 }
-
-
-
-
-
-
-
-
 
   render() {
     return (
       <div>
         
         <form onSumbit={this.handleLocationSearch}>
-        <label>Find the Fun.</label>
-        <input 
-          type="text" 
-          name="search"
-          placeholder="Enter a location."
-        />
-        <button type="sumbit">Find It!</button>
+          <label>Find the Fun.</label>
+          <input type="text"  name="search" placeholder="Enter a location." />
+          <button type="sumbit">Find It!</button>
         </form>
-
-
-        <Map 
-        location={this.state.locationObject}
-        map={map}
-        />
-        <Restaurants
-        restaurants={this.state.restaurants}
-        location={this.state.locationObject}
-        />
-
-
+        {/**add condtional rendering for search */}
+        { this.state.displaySearchResults &&
+          <>
+            <Map 
+            location={this.state.locationObject}
+            map={map}
+            />
+            <Restaurants
+            restaurants={this.state.restaurants}
+            location={this.state.locationObject}
+            />
+         </>
+        }
       </div>
     )
   }
