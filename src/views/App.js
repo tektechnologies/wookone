@@ -11,6 +11,7 @@ import HikeATrail from './HikeATrail';
 import Weather from './Weather';
 import YelpFood from './YelpFood';
 import YourMovies from './YourMovies';
+import CityExplorer from './CityExplorer/CityExplorerMain';
 import {Switch, Route} from 'react-router-dom';
 
 
@@ -65,6 +66,9 @@ class App extends React.Component {
                      <YourMovies />
                     </Route>
 
+                    <Route path="/CityExplorer/CityExplorerMain">
+                     <CityExplorer />
+                    </Route>
                     
 
                   </Switch>

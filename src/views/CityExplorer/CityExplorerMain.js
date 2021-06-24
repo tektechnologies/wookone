@@ -18,7 +18,7 @@ constructor(props) {
 
 handleLocationSearch = (event) => {
   event.preventDefault();
-  {/** add set state to update view after search */}
+  /** add set state to update view after search */
   this.setState({displaySearchResults: true});
 }
 
@@ -36,7 +36,7 @@ handleLocationSearch = (event) => {
         </form>
         {/**add condtional rendering for search */}
         { this.state.displaySearchResults &&
-          <>
+          <div>
             <Map 
             location={this.state.locationObject}
             map={map}
@@ -45,7 +45,7 @@ handleLocationSearch = (event) => {
             restaurants={this.state.restaurants}
             location={this.state.locationObject}
             />
-         </>
+         </div>
         }
       </div>
     )
