@@ -5,7 +5,8 @@ import {
   Row, 
   Col,
   Button,
-  Jumbotron } from 'react-bootstrap';
+  Jumbotron,
+  Card } from 'react-bootstrap';
 
 
 class HomePage extends React.Component {
@@ -14,7 +15,7 @@ class HomePage extends React.Component {
     return(
 
       <div className="container text-center">  
-        <div className="row">
+        <div className="row homePageMain">
           <Container fluid>
             <Row>
               <Col>
@@ -25,7 +26,18 @@ class HomePage extends React.Component {
                 </Jumbotron>
               </Col>
             </Row>
+            <Card style={{ width: '18rem' }}>
+            <Card.Img variant="top" src="https://picsum.photos/id/281/200/300" />
+            <Card.Body>
+              <Card.Title>City Explorer</Card.Title>
+              <Card.Text>
+                Plan your Path, City Explorer Awaits.
+              </Card.Text>
+              <Button variant="primary">Go Somewhere</Button>
+            </Card.Body>
+          </Card>
           </Container>
+   
         </div>
       </div>
     );

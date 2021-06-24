@@ -1,18 +1,18 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 export class Map extends Component {
   render() {
     
     return (
       <div>
-        <h3></h3>
+        <h3>Location Map for { this.props.location.search_query}</h3>
 
-        {
-          <img />
+        { this.props.map && 
+          <img src={this.props.map || ''} />
         }
       </div>
     )
   }
 }
 
-export default Map
+export default Map;
