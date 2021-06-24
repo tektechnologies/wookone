@@ -11,7 +11,8 @@ constructor(props) {
   super(props)
 
   this.state = {
-     
+     locationObject: location,
+     restaurant: restaurant
   }
 }
 
@@ -34,14 +35,20 @@ methodName = (params) => {
       <div>
         
         <form>
-        <label></label>
-        <input></input>
-        <button></button>
+        <label>Find the Fun.</label>
+        <input    />
+        <button>Find It!</button>
         </form>
 
 
-        <Map />
-        <Restaurants />
+        <Map 
+        location={}
+        map={map}
+        />
+        <Restaurants
+        restaurants={}
+        location={}
+        />
 
 
       </div>
