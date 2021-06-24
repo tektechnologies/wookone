@@ -18,8 +18,8 @@ constructor(props) {
 
 
 
-methodName = (params) => {
-  
+handleLocationSearch = (event) => {
+  event.preventDefault();
 }
 
 
