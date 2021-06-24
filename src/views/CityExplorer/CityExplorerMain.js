@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Map from './Map';
 import Restaurants from './Restaurants';
 import location from '../../assets/data/location.json';
-import restaurant from '../../assets/data/weather.json';
+import restaurants from '../../assets/data/weather.json';
 import map from '../../assets/Images/map.png';
 
 export class CityExplorerMain extends Component {
@@ -12,7 +12,7 @@ constructor(props) {
 
   this.state = {
      locationObject: location,
-     restaurant: restaurant
+     restaurants: restaurants
   }
 }
 
@@ -34,20 +34,24 @@ handleLocationSearch = (event) => {
     return (
       <div>
         
-        <form>
+        <form onSumbit={this.handleLocationSearch}>
         <label>Find the Fun.</label>
-        <input    />
-        <button>Find It!</button>
+        <input 
+          type="text" 
+          name="search"
+          placeholder="Enter a location."
+        />
+        <button type="sumbit">Find It!</button>
         </form>
 
 
         <Map 
-        location={}
+        location={this.state.locationObject}
         map={map}
         />
         <Restaurants
-        restaurants={}
-        location={}
+        restaurants={this.state.restaurants}
+        location={this.state.locationObject}
         />
 
 
