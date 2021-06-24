@@ -25,7 +25,10 @@ handleLocationSearch = (event) => {
   render() {
     return (
       <div>
-        
+      <div id="header">
+      <h1>Find Your Path</h1>
+      <p>Enter a location in the USA below to learn about the weather, restaurants, movies, and more!</p>
+    </div>
         <form onSumbit={this.handleLocationSearch}>
           <label>Find the Fun.</label>
           <input type="text"  name="search" placeholder="Enter a location." />
