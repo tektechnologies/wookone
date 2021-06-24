@@ -33,8 +33,8 @@ class HomePage extends React.Component {
               <Card.Text>
                 Plan your Path, City Explorer Awaits.
               </Card.Text>
-              <Button variant="primary">
-              <Card.Link href="./CityExplorer/CityExplorerMain" >Go Somewhere</Card.Link></Button>
+              <Button variant="primary" href="./CityExplorer/CityExplorerMain">
+              Go Somewhere</Button>
             </Card.Body>
           </Card>
           </Container>
