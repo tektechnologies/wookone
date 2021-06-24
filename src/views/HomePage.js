@@ -27,13 +27,14 @@ class HomePage extends React.Component {
               </Col>
             </Row>
             <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="https://picsum.photos/id/281/200/300" />
+            <Card.Img variant="top" src="https://picsum.photos/id/281/200/175" />
             <Card.Body>
               <Card.Title>City Explorer</Card.Title>
               <Card.Text>
                 Plan your Path, City Explorer Awaits.
               </Card.Text>
-              <Button variant="primary">Go Somewhere</Button>
+              <Button variant="primary">
+              <Card.Link href="./CityExplorer/CityExplorerMain" >Go Somewhere</Card.Link></Button>
             </Card.Body>
           </Card>
           </Container>
