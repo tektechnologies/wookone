@@ -12,7 +12,7 @@ export class Weather extends Component {
         <div>
             <p>Weather Location: {this.props.weather['city_name'] }</p>
             <p>Weather lon: {this.props.weather['lon'] }</p>
-            <p>Weather timezone: {this.props.weather['timezon'] }</p>
+            <p>Weather timezone: {this.props.weather['timezone'] }</p>
             <p>Weather lat: {this.props.weather['lat'] }</p>
             <p>Weather country_code{this.props.weather['country_code'] }</p>
             <p>Weather state_code: {this.props.weather['state_code'] }</p> 

@@ -52,7 +52,7 @@ handleLocationSearch = (event) => {
             location={this.state.locationObject}
             />
             <Restaurants
-            weather={this.state.restaurants}
+            restaurants={this.state.restaurants}
             location={this.state.locationObject}
             />
          </div>
