@@ -7,7 +7,6 @@ export class Weather extends Component {
     return (
       <div>
       <h3>Weather in {this.props.location.search_query}</h3>
-         
         {this.props.weather &&
         <div>
             <p>Weather Location: {this.props.weather['city_name'] }</p>

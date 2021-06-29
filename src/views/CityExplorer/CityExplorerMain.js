@@ -29,12 +29,11 @@ handleLocationSearch = (event) => {
 
   render() {
     return (
-      
       <div>
-      <div id="header">
-      <h1>Find Your Path</h1>
-      <p>Enter a location in the USA below to learn about the weather, restaurants, movies, and more!</p>
-    </div>
+        <div id="header">
+          <h1>Find Your Path</h1>
+          <p>Enter a location in the USA below to learn about the weather, restaurants, movies, and more!</p>
+        </div>
         <form onSubmit={this.handleLocationSearch}>
           <label>Find the Fun.</label>
           <input type="text"  name="search" placeholder="Enter a location." />
@@ -61,5 +60,4 @@ handleLocationSearch = (event) => {
     )
   }
 }
-
 export default CityExplorerMain;

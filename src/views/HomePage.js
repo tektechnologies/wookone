@@ -13,7 +13,6 @@ class HomePage extends React.Component {
 
   render(){
     return(
-
       <div className="container text-center">  
         <div className="row homePageMain">
           <Container fluid>
@@ -38,7 +37,6 @@ class HomePage extends React.Component {
             </Card.Body>
           </Card>
           </Container>
-   
         </div>
       </div>
     );

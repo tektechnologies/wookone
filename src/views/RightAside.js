@@ -11,9 +11,7 @@ render() {
             <Card.Title>Upcoming Events:</Card.Title>
             <Card.Body>
         <Card.Link href="/">Go to Calendar</Card.Link>
-       
       </Card.Body>
-      
       <Card.Title>myWook</Card.Title>
       </Card.Body>
       <ListGroup className="list-group-flush">

@@ -14,21 +14,18 @@ class Header extends React.Component {
          </Navbar.Brand>
          <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="mr-auto">
-                <Nav.Link className="navbarAnchor" href="/">Home</Nav.Link>
-                <Nav.Link className="navbarAnchor" href="/AppSocialPortal">Wookin</Nav.Link>
-              </Nav>
-            
+            <Nav className="mr-auto">
+              <Nav.Link className="navbarAnchor" href="/">Home</Nav.Link>
+              <Nav.Link className="navbarAnchor" href="/AppSocialPortal">Wookin</Nav.Link>
+            </Nav>
             <ul className="nav navbar-nav navbar-right">
               <li><Nav.Link href="/Login">Login</Nav.Link></li>
               <li><Nav.Link href="/Register" > Register</Nav.Link></li>
             </ul>
-
             <Form inline>
               <FormControl type="text" placeholder="Search" className="mr-sm-2" />
               <Button className="bg-custom-button" variant="outline-info">Search</Button>
             </Form>
-
           </Navbar.Collapse>
       </Navbar>
     )

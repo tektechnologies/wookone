@@ -22,8 +22,6 @@ class App extends React.Component {
     return(
       <div id="app">
         <Header />
-       
-
                <main>
                   <Switch>
                     <Route path="/" exact>
@@ -69,8 +67,6 @@ class App extends React.Component {
                     <Route path="/CityExplorer/CityExplorerMain">
                      <CityExplorer />
                     </Route>
-                    
-
                   </Switch>
               </main>
          <Footer />
@@ -78,7 +74,6 @@ class App extends React.Component {
     )
   }
 }
-
 export default App;
 
 

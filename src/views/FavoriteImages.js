@@ -25,7 +25,6 @@ class FavoriteImages extends React.Component {
 
   render() {
     return(
-    
       <Card 
       style={{width: '25rem'}}
       bg="dark"
@@ -44,8 +43,6 @@ class FavoriteImages extends React.Component {
               </Card.Text>
           </Card.Body>
       </Card>
-      
-      
     )
   }
 }
