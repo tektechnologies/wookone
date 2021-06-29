@@ -30,17 +30,21 @@ handleLocationSearch = (event) => {
   render() {
     return (
       <div>
+
         <div id="header">
           <h1>Find Your Path</h1>
           <p>Enter a location in the USA below to learn about the weather, restaurants, movies, and more!</p>
         </div>
+
         <form onSubmit={this.handleLocationSearch}>
           <label>Find the Fun.</label>
           <input type="text"  name="search" placeholder="Enter a location." />
           <button type="sumbit">Find It!</button>
         </form>
+
         {/**add condtional rendering for search */}
         { this.state.displaySearchResults &&
+
           <div>
             <Map 
             location={this.state.locationObject}
@@ -55,6 +59,7 @@ handleLocationSearch = (event) => {
             location={this.state.locationObject}
             />
          </div>
+         
         }
       </div>
     )
