@@ -12,9 +12,9 @@ export class Restaurants extends Component {
                 this.props.restaurants && this.props.restaurants.map((place, index) => {
                 return (
                   <li key={index}>
-                  <p>Restaruant Name: {place.restaurant}</p> 
-                  <p>Food Genre: {place.restaurant} serves {place.cuisines} food in {place.locality} </p>
-                </li>
+                    <p>Restaruant Name: {place.restaurant}</p> 
+                    <p>Food Genre: {place.restaurant} serves {place.cuisines} food in {place.locality} </p>
+                  </li>
                 )
               }
            )}
