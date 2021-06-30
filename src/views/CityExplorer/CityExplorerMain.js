@@ -9,22 +9,22 @@ import map from '../../assets/Images/map.png';
 
 export class CityExplorerMain extends Component {
   
-constructor(props) {
-  super(props)
-  this.state = {
-     displaySearchResults: false,
-     locationObject: location,
-     weather: weather,
-     restaurants: restaurants
+  constructor(props) {
+    super(props)
+    this.state = {
+      displaySearchResults: false,
+      locationObject: location,
+      weather: weather,
+      restaurants: restaurants
+    }
   }
-}
 
-handleLocationSearch = (event) => {
-  event.preventDefault();
-  console.log(location, restaurants, weather);
-  /** add set state to update view after search */
-  this.setState({displaySearchResults: true});
-}
+  handleLocationSearch = (event) => {
+    event.preventDefault();
+    console.log(location, restaurants, weather);
+    /** add set state to update view after search */
+    this.setState({displaySearchResults: true});
+  }
 
 
   render() {
@@ -59,7 +59,7 @@ handleLocationSearch = (event) => {
             location={this.state.locationObject}
             />
          </div>
-         
+
         }
       </div>
     )
