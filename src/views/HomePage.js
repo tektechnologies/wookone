@@ -29,11 +29,11 @@ class HomePage extends React.Component {
               <Card.Img variant="top" src="https://picsum.photos/id/281/200/175" />
                 <Card.Body>
                   <Card.Title>City Explorer</Card.Title>
-                    <Card.Text>
-                      Plan your Path, City Explorer Awaits.
-                    </Card.Text>
-                    <Button variant="primary" href="./CityExplorer/CityExplorerMain">
-                    Go Somewhere</Button>
+                  <Card.Text>
+                    Plan your Path, City Explorer Awaits.
+                  </Card.Text>
+                  <Button variant="primary" href="./CityExplorer/CityExplorerMain">
+                  Go Somewhere</Button>
                 </Card.Body>
             </Card>
           </Container>
