@@ -22,53 +22,53 @@ class App extends React.Component {
     return(
       <div id="app">
         <Header />
-               <main>
-                  <Switch>
-                    <Route path="/" exact>
-                      <HomePage /> 
-                    </Route>
+          <main>
+            <Switch>
+              <Route path="/" exact>
+                <HomePage /> 
+              </Route>
 
-                    <Route path="/Login">
-                      <Login />
-                    </Route>
+              <Route path="/Login">
+                <Login />
+              </Route>
 
-                    <Route path="/Register">
-                      <Register />
-                    </Route>
+              <Route path="/Register">
+                <Register />
+              </Route>
 
-                   <Route path="/AppSocialPortal">
-                      <AppSocialPortal />
-                    </Route>
+              <Route path="/AppSocialPortal">
+                <AppSocialPortal />
+              </Route>
 
-                    <Route path="/FavoriteImageMain">
-                     <FavoriteImageMain />
-                    </Route>
+              <Route path="/FavoriteImageMain">
+                <FavoriteImageMain />
+              </Route>
 
-                    <Route path="/FavoriteImages">
-                    <FavoriteImages />
-                   </Route>
+              <Route path="/FavoriteImages">
+              <FavoriteImages />
+              </Route>
 
-                    <Route path="/HikeATrail">
-                     <HikeATrail />
-                    </Route>
+              <Route path="/HikeATrail">
+                <HikeATrail />
+              </Route>
 
-                    <Route path="/Weather">
-                     <Weather />
-                    </Route>
+              <Route path="/Weather">
+                <Weather />
+              </Route>
 
-                    <Route path="/YelpFood">
-                     <YelpFood />
-                    </Route>
+              <Route path="/YelpFood">
+                <YelpFood />
+              </Route>
 
-                    <Route path="/YourMovies">
-                     <YourMovies />
-                    </Route>
+              <Route path="/YourMovies">
+                <YourMovies />
+              </Route>
 
-                    <Route path="/CityExplorer/CityExplorerMain">
-                     <CityExplorer />
-                    </Route>
-                  </Switch>
-              </main>
+              <Route path="/CityExplorer/CityExplorerMain">
+                <CityExplorer />
+              </Route>
+            </Switch>
+          </main>
          <Footer />
       </div>  
     )
