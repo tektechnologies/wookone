@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Form, Button, Alert } from 'react-bootstrap';
 
 export default class CityExplorerSearch extends React.Component {
   
@@ -27,3 +28,5 @@ export default class CityExplorerSearch extends React.Component {
     )
   }
 }
+
+export default CityExplorerSearch;
