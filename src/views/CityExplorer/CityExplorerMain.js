@@ -11,7 +11,7 @@ import LatLon from './LatLon';
 import CityExplorerSearch from './CityExplorerSearch';
 
 
-export class CityExplorerMain extends Component {
+export class CityExplorerMain extends React.Component {
   
   constructor(props) {
     super(props)
@@ -27,13 +27,10 @@ export class CityExplorerMain extends Component {
       restaurants: restaurants
     }
   }
-
-  handleLocationSearch = (event) => {
-    event.preventDefault();
-    console.log(location, restaurants, weather);
-    /** add set state to update view after search */
-    this.setState({displaySearchResults: true});
+  updateCitySearch = (event) => {
+    this.setState({searchQuery: event.target.value });
   }
+  
 
 
   render() {
