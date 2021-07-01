@@ -10,3 +10,5 @@ export default class LatLon extends React.Component {
     )
   }
 }
+
+export default LatLon;
