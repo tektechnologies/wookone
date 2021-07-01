@@ -16,8 +16,13 @@ export class CityExplorerMain extends Component {
   constructor(props) {
     super(props)
     this.state = {
+      searchQuery: '',
+      location: '',
+      latitude: '',
+      longitude: '',
       displaySearchResults: false,
-      locationObject: location,
+      displayError: false,
+      errorMessage: '',
       weather: weather,
       restaurants: restaurants
     }
