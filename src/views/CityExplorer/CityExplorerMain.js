@@ -24,9 +24,7 @@ export class CityExplorerMain extends React.Component {
   }
   
   displayLatLon = async () => {
-    
   }
-
 
   render() {
     return (
