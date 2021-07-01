@@ -6,7 +6,7 @@ export default class CityExplorerSearch extends React.Component {
 
   handleLocationSearch = (event) => {
     event.preventDefault();
-    this.props.updateCitySearch();
+    this.props.displayLatLon();
   }
 
 
@@ -16,13 +16,17 @@ export default class CityExplorerSearch extends React.Component {
     return (
       <div>
         <div id="header">
-          <h1>Find Your Path</h1>
-          <p>Enter a location in the USA below to learn about the weather, restaurants, movies, and more!</p>
+          <h1>Search City</h1>
         </div>
         <form onSubmit={this.handleLocationSearch}>
-          <label>Find the Fun.</label>
-          <input type="text"  name="search" placeholder="Enter a location." />
-          <button type="sumbit">Find It!</button>
+          <Form.Group>
+            <Form.Label></Form.Label>
+            <Form.Control></Form.Control>
+          </Form.Group>
+          {
+            {/** Put Error Here */}
+          }
+          {/**Button Goes Here */}
         </form>
        </div>
     )

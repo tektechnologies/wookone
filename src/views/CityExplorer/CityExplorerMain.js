@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Map from './Map';
-import map from '../../assets/Images/map.png';
 import axios from 'axios'; 
 import LatLon from './LatLon';
 import CityExplorerSearch from './CityExplorerSearch';
@@ -24,6 +23,9 @@ export class CityExplorerMain extends React.Component {
     this.setState({searchQuery: event.target.value });
   }
   
+  displayLatLon = async () => {
+    
+  }
 
 
   render() {
