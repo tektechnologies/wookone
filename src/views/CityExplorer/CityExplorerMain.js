@@ -6,6 +6,10 @@ import location from '../../assets/data/location.json';
 import restaurants from '../../assets/data/restaurant.json';
 import weather from '../../assets/data/weather.json';
 import map from '../../assets/Images/map.png';
+import axios from 'axios'; 
+import LatLon from './LatLon';
+import CityExplorerSearch from './CityExplorerSearch';
+
 
 export class CityExplorerMain extends Component {
   
