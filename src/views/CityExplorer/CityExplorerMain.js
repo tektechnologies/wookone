@@ -6,7 +6,7 @@ import CityExplorerSearch from './CityExplorerSearch';
 import { Container, Row, Col } from 'react-bootstrap';
 
 
-export class CityExplorerMain extends React.Component {
+class CityExplorerMain extends React.Component {
   
   constructor(props) {
     super(props)
@@ -37,25 +37,23 @@ export class CityExplorerMain extends React.Component {
               <CityExplorerSearch />
             </Col>
           </Row>
-          {/** Display Map here. */
-            <>
-              <Row>
-                <Col>
-                  {/**Component Lat and Lon  */}
-                  <LatLon />
-                </Col>
-              </Row>
-              <Row>
-                <Col>
-                  {/**Component map */}
-                  <Map />
-                </Col>
-              </Row>
-            </>
-          }
+          {/** Display Map here. */}
+          <Row>
+            <Col>
+              {/**Component Lat and Lon  */}
+              <LatLon />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              {/**Component map */}
+              <Map />
+            </Col>
+          </Row>
         </Container>
       </div>
     )
   }
 }
+
 export default CityExplorerMain;
