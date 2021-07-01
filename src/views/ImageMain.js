@@ -6,25 +6,9 @@ import {Form}  from 'react-bootstrap';
 import jsonData from '../assets/data/data.json'; 
 import '../assets/css/Main.css';
 
-/** So the above renders but this doesnt
-  import {Form}  from 'react-bootstrap/Form';
-
-  But this does work:
-  import Form  from 'react-bootstrapForm';
-
-  not sure why? 
-*/
-
-
-
-
-
-
-
 
 class ImageMain extends React.Component {
 
- 
   pathFinder = (event) => {
     console.log(event.target.value);
 
@@ -66,7 +50,6 @@ class ImageMain extends React.Component {
               </Form.Control>
             </Form.Group>
           </Form>
-
           <CardColumns>
             {this.props.allFavoriteImages.map((favoriteImage, idx) => (
               <FavoriteImages

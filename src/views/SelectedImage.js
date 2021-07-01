@@ -15,8 +15,7 @@ render(){
     <Modal.Dialog>
       <Modal.Header closeButton>
         <Modal.Title>{this.props.selectedFavoriteImages.title}{/** this.props.selectedFavoriteFood.title */}</Modal.Title>
-      </Modal.Header>
-    
+      </Modal.Header>  
       <Modal.Body>
       <Card
        bg="dark"
@@ -25,14 +24,12 @@ render(){
       >
       <Card.Img variant="top" alt={this.props.selectedFavoriteImages.title} src={this.props.selectedFavoriteImages.image_url}
       />
-      
       <Card.Body>
         <Card.Title>{this.props.selectedFavoriteImages.title}</Card.Title>
         <Card.Text>{this.props.selectedFavoriteImages.description}</Card.Text>
       </Card.Body>
       </Card>
       </Modal.Body>
-    
       <Modal.Footer>
       <Button onClick={this.props.handleClose}
         variant="secondary">Close</Button>

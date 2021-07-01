@@ -21,7 +21,6 @@ class AppSocialPortal extends React.Component {
     )
   }
 }
-
 export default AppSocialPortal;
 
 

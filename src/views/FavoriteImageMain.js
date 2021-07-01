@@ -34,30 +34,18 @@ updateChoosenPaths = (allFavoriteImages) => {
   render() {
     return(
       <div>
-      
-
-       
-      <ImageMain 
-      allFavoriteImages={this.state.allFavoriteImages}
-      displayAsModal={this.displayAsModal}
-      displayFilteredImages={this.updateChoosenPaths}
-      />
-
-      <SelectedImage 
-      selectedFavoriteImages={this.state.selectedFavoriteImages}
-      show={this.state.displayModal}
-      handleClose={this.handleClose}
-      />
-
-
-
-      
+        <ImageMain 
+        allFavoriteImages={this.state.allFavoriteImages}
+        displayAsModal={this.displayAsModal}
+        displayFilteredImages={this.updateChoosenPaths}
+        />
+        <SelectedImage 
+        selectedFavoriteImages={this.state.selectedFavoriteImages}
+        show={this.state.displayModal}
+        handleClose={this.handleClose}
+        />
       </div>
-      
-
-    
     )
   }
 }
-
 export default FavoriteImageMain;

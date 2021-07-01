@@ -26,12 +26,9 @@ render() {
                       <ListGroupItem><span className="label label-primary"><Card.Link href="/Weather">Weather</Card.Link></span></ListGroupItem>
                       <ListGroupItem><span className="label label-success"><Card.Link href="/YelpFood">Find Local Food</Card.Link></span></ListGroupItem>
                 </ListGroup>
-                <Card.Body>
-                    
-                      
+                <Card.Body>          
                       <Card.Link href="/YourMovies">Your Movies</Card.Link>
                       <Card.Link href="/FavoriteImageMain">Favorite Images</Card.Link>
-                      
                 </Card.Body>
             </Card>
           </Col>
