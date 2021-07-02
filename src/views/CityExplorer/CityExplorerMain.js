@@ -37,6 +37,7 @@ class CityExplorerMain extends React.Component {
             <Col>
               <CityExplorerSearch 
                 updateCitySearch={this.updateCitySearch}
+                displayError={this.state.displayError}
               />
             </Col>
           </Row>

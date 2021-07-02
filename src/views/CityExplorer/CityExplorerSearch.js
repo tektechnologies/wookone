@@ -20,7 +20,14 @@ class CityExplorerSearch extends React.Component {
             <Form.Control onChange={this.props.updateCitySearch} type="text" placeholder="Enter a City"></Form.Control>
           </Form.Group>
           {
-            {/** Put Error Here */}
+            this.props.displayError && 
+            <>
+              <Alert variant="danger">
+                <strong>Error {''}</strong> 
+                {this.props.errorMessage}, please try another search.
+              </Alert>
+            </>
+           
           }
           {/**Button Goes Here */}
         </form>
