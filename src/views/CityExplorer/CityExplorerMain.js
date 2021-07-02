@@ -25,32 +25,31 @@ class CityExplorerMain extends React.Component {
   }
   
   displayLatLon = async () => {
+    const locIqUrl = `https://us1.locationiq.com/v1/search.php?key=${process.allowedNodeEnvironmentFlagsenv.GEOCODE_API_KEY}&q=${this.state.searchQuery}&format=json`; 
+    console.log(locIqUrl);
   }
 
   render() {
     return (
       <div>
-        <Container>
+       {/**  <Container>
           <Row>
             <Col>
-              {/**City search component */}
               <CityExplorerSearch />
             </Col>
           </Row>
-          {/** Display Map here. */}
           <Row>
             <Col>
-              {/**Component Lat and Lon  */}
               <LatLon />
             </Col>
           </Row>
           <Row>
             <Col>
-              {/**Component map */}
               <Map />
             </Col>
           </Row>
         </Container>
+        */}
       </div>
     )
   }
