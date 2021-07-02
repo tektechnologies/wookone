@@ -21,15 +21,17 @@ class CityExplorerSearch extends React.Component {
           </Form.Group>
           {
             this.props.displayError && 
-            <>
+            <div>
               <Alert variant="danger">
                 <strong>Error {''}</strong> 
                 {this.props.errorMessage}, please try another search.
               </Alert>
-            </>
+            </div>
            
           }
-          {/**Button Goes Here */}
+          <Button variant="primary" type="submit"> 
+            go Now!
+          </Button>
         </form>
        </div>
     )
