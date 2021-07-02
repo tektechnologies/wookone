@@ -27,7 +27,6 @@ class CityExplorerSearch extends React.Component {
                 {this.props.errorMessage}, please try another search.
               </Alert>
             </div>
-           
           }
           <Button variant="primary" type="submit"> 
             go Now!
