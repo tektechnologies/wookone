@@ -25,17 +25,19 @@ class CityExplorerMain extends React.Component {
   }
   
   displayLatLon = async () => {
-    const locIqUrl = `https://us1.locationiq.com/v1/search.php?key=${process.allowedNodeEnvironmentFlagsenv.GEOCODE_API_KEY}&q=${this.state.searchQuery}&format=json`; 
+    const locIqUrl = `https://us1.locationiq.com/v1/search.php?key=${process.env.GEOCODE_API_KEY}&q=${this.state.searchQuery}&format=json`; 
     console.log(locIqUrl);
   }
 
   render() {
     return (
       <div>
-       {/**  <Container>
+         <Container>
           <Row>
             <Col>
-              <CityExplorerSearch />
+              <CityExplorerSearch 
+                updateCitySearch={this.updateCitySearch}
+              />
             </Col>
           </Row>
           <Row>
@@ -49,7 +51,6 @@ class CityExplorerMain extends React.Component {
             </Col>
           </Row>
         </Container>
-        */}
       </div>
     )
   }

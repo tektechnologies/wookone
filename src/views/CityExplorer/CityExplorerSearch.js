@@ -16,8 +16,8 @@ class CityExplorerSearch extends React.Component {
         </div>
         <form onSubmit={this.handleLocationSearch}>
           <Form.Group>
-            <Form.Label></Form.Label>
-            <Form.Control></Form.Control>
+            <Form.Label>Select Location.</Form.Label>
+            <Form.Control onChange={this.props.updateCitySearch} type="text" placeholder="Enter a City"></Form.Control>
           </Form.Group>
           {
             {/** Put Error Here */}
