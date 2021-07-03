@@ -22,11 +22,13 @@ class CityExplorerMain extends React.Component {
   }
   updateCitySearch = (event) => {
     this.setState({searchQuery: event.target.value });
+    console.log(event.target.value);
   }
   
   displayLatLon = async () => {
     const locIqUrl = `https://us1.locationiq.com/v1/search.php?key=${process.env.GEOCODE_API_KEY}&q=${this.state.searchQuery}&format=json`; 
     console.log(locIqUrl);
+    
   }
 
   render() {
@@ -45,12 +47,12 @@ class CityExplorerMain extends React.Component {
           </Row>
           <Row>
             <Col>
-              <LatLon />
+             {/** <LatLon /> */} 
             </Col>
           </Row>
           <Row>
             <Col>
-              <Map />
+             {/** <Map /> */} 
             </Col>
           </Row>
         </Container>
