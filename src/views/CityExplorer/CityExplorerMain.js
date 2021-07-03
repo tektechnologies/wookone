@@ -28,7 +28,12 @@ class CityExplorerMain extends React.Component {
   displayLatLon = async () => {
     const locIqUrl = `https://us1.locationiq.com/v1/search.php?key=${process.env.GEOCODE_API_KEY}&q=${this.state.searchQuery}&format=json`; 
     console.log(locIqUrl);
-    
+       
+    try {
+          
+        } catch (err) {
+          
+        }
   }
 
   render() {
