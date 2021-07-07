@@ -1,7 +1,7 @@
-import  { React, Component } from 'react';
+import React  from 'react';
 import Image from 'react-bootstrap/Image';
 
-class Map extends Component {
+class Map extends React.Component {
   render() {
     
     return (
