@@ -72,6 +72,11 @@ class CityExplorerMain extends React.Component {
           <Row>
             <Col>
              {/** <LatLon /> */} 
+             <LatLon
+                city={this.state.location}
+                lat={this.state.latitude}
+                lon={this.state.longitude}
+             />
             </Col>
           </Row>
           <Row>
