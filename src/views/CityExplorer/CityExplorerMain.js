@@ -27,12 +27,16 @@ class CityExplorerMain extends React.Component {
   
   displayLatLon = async () => {
     const locIqUrl = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATION_KEY}&q=${this.state.searchQuery}&format=json`; 
+    //click on link in inspector see object data
     console.log(locIqUrl);
+
 
     let searchedLocation;
     try {
-      searchedLocation = await axios.get(locIqUrl);
-      console.log(searchedLocation);
+      // searchedLocation =  axios.get(locIqUrl);
+      // console.log('promise pending', searchedLocation);
+      searchedLocation =  await axios.get(locIqUrl);
+      console.log('data object', searchedLocation);
           
         } catch (err) {
           
@@ -64,6 +68,7 @@ class CityExplorerMain extends React.Component {
             </Col>
           </Row>
         </Container>
+        {JSON.stringify(this.state)}
       </div>
     )
   }
