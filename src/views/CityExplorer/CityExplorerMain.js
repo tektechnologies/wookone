@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import  { React, Component } from 'react';
 import axios from 'axios'; 
 import LatLon from './LatLon';
 import Map from './Map';
@@ -6,7 +6,7 @@ import CityExplorerSearch from './CityExplorerSearch';
 import { Container, Row, Col } from 'react-bootstrap';
 
 
-class CityExplorerMain extends React.Component {
+class CityExplorerMain extends Component {
   
   constructor(props) {
     super(props)

@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import  { React, Component } from 'react';
 import { Form, Button, Alert } from 'react-bootstrap';
 
-class CityExplorerSearch extends React.Component {
+class CityExplorerSearch extends Component {
   
   handleLocationSearch = (event) => {
     event.preventDefault();

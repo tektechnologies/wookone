@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import  {React, Component } from 'react';
 
-class LatLon extends React.Component {
+class LatLon extends Component {
   render() {
     return (
       <div>
