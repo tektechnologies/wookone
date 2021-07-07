@@ -59,37 +59,39 @@ class CityExplorerMain extends React.Component {
     return (
       <div>
          <Container>
-          <Row>
-            <Col>
-              <CityExplorerSearch 
-                updateCitySearch={this.updateCitySearch}
-                displayError={this.state.displayError}
-                errorMessage={this.state.errorMessage}
-                displayLatLon={this.displayLatLon}
-              />
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-             {/** <LatLon /> */} 
-             <LatLon
-                city={this.state.location}
-                lat={this.state.latitude}
-                lon={this.state.longitude}
-             />
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-             {/** <Map /> */} 
-             <Map              
-                image_url = {`https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATION_KEY}&center=${this.state.latitude},${this.state.longitude}&size=${window.innerWidth}x350&format=jpg&zoom=12`}
-                city={this.state.location}
-             /> 
-            </Col>
-          </Row>
-        </Container>
-        {JSON.stringify(this.state)}
+            <Row>
+              <Col>
+                 <CityExplorerSearch 
+                  updateCitySearch={this.updateCitySearch}
+                  displayError={this.state.displayError}
+                  errorMessage={this.state.errorMessage}
+                  displayLatLon={this.displayLatLon}
+                  />
+               </Col>
+            </Row>
+            { this.state.displayMapResults &&
+              <div>
+                <Row>
+                   <Col>
+                      <LatLon
+                          city={this.state.location}
+                          lat={this.state.latitude}
+                          lon={this.state.longitude}
+                      />
+                   </Col>
+                 </Row>
+                 <Row>
+                   <Col>
+                      <Map              
+                          image_url = {`https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATION_KEY}&center=${this.state.latitude},${this.state.longitude}&size=${window.innerWidth}x350&format=jpg&zoom=12`}
+                          city={this.state.location}
+                      /> 
+                      </Col>
+                  </Row>
+              </div>
+            }
+         </Container>
+        {/** {JSON.stringify(this.state)}  */} 
       </div>
     )
   }
