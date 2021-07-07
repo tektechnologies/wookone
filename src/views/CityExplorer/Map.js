@@ -7,10 +7,10 @@ class Map extends Component {
     return (
       <div>
         <h3>Location Map for { this.props}</h3>
-          <Image src={this.props} 
-            alt={this.props} 
-            title={this.props}
-            roundedCircle
+          <Image src={this.props.image_url} 
+            alt={this.props.city} 
+            title={this.props.city}
+            rounded Circle
           />
       </div>
     )
