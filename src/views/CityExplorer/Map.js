@@ -6,11 +6,11 @@ class Map extends Component {
     
     return (
       <div>
-        <h3>Location Map for { this.props}</h3>
+        <h3>Location Map for { this.props.city}</h3>
           <Image src={this.props.image_url} 
             alt={this.props.city} 
             title={this.props.city}
-            rounded Circle
+            roundedCircle
           />
       </div>
     )

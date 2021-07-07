@@ -83,7 +83,7 @@ class CityExplorerMain extends React.Component {
             <Col>
              {/** <Map /> */} 
              <Map              
-                image_url = {`https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATION_KEY}&center=${this.state.latitude},${this.state.longitude}&size=${window.innerWidth}x450&format=jpg&zoom=12`}
+                image_url = {`https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATION_KEY}&center=${this.state.latitude},${this.state.longitude}&size=${window.innerWidth}x350&format=jpg&zoom=12`}
                 city={this.state.location}
              /> 
             </Col>
