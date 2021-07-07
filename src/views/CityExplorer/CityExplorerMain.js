@@ -15,7 +15,7 @@ class CityExplorerMain extends React.Component {
       location: '',
       latitude: '',
       longitude: '',
-      displaySearchResults: false,
+      displayMapResults: false,
       displayError: false,
       errorMessage: ''
     }
@@ -37,9 +37,21 @@ class CityExplorerMain extends React.Component {
       // console.log('promise pending', searchedLocation);
       searchedLocation =  await axios.get(locIqUrl);
       console.log('data object', searchedLocation);
-          
+      
+      this.setState({
+        location: searchedLocation.data[0].display_name,
+        latitude: searchedLocation.data[0].lat,
+        longitude:searchedLocation.data[0].lon,
+        displayMapResults: true,
+        displayError: false
+      });
+
         } catch (err) {
-          
+          this.setState({
+            displayMapResults :false,
+            displayError: true,
+            errorMessage: err.response.status + ': ' + err.response.data.err
+          });
         }
   }
 
