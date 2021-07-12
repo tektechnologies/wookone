@@ -1,16 +1,20 @@
-import React, { Component } from 'react';
+import React  from 'react';
+import Image from 'react-bootstrap/Image';
 
-export class Map extends Component {
+class Map extends React.Component {
   render() {
     
     return (
       <div>
-        <h3>Location Map for { this.props.location.search_query}</h3>
-        { this.props.map && 
-          <img src={this.props.map || ''} alt="temp placeholder" height="250" width="250"/>
-        }
+        <h3>Location Map for { this.props.city}</h3>
+          <Image src={this.props.image_url} 
+            alt={this.props.city} 
+            title={this.props.city}
+            roundedCircle
+          />
       </div>
     )
   }
 }
+
 export default Map;
