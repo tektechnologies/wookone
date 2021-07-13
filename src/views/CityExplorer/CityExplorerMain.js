@@ -20,16 +20,27 @@ class CityExplorerMain extends React.Component {
       errorMessage: ''
     }
   }
+
   updateCitySearch = (event) => {
+    
     this.setState({searchQuery: event.target.value });
     console.log(event.target.value);
+
   }
   
+
+
+
+
+
+
+
+
+
   displayLatLon = async () => {
     const locIqUrl = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATION_KEY}&q=${this.state.searchQuery}&format=json`; 
     //click on link in inspector see object data
     console.log(locIqUrl);
-
 
     let searchedLocation;
     try {
@@ -54,6 +65,36 @@ class CityExplorerMain extends React.Component {
           });
         }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   render() {
     return (
