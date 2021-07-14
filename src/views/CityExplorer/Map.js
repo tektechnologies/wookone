@@ -10,7 +10,7 @@ class Map extends React.Component {
           <Image src={this.props.image_url} 
             alt={this.props.city} 
             title={this.props.city}
-            roundedCircle
+            rounded
           />
       </div>
     )

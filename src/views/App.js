@@ -8,7 +8,6 @@ import AppSocialPortal from './AppSocialPortal';
 import FavoriteImageMain from './FavoriteImageMain';
 import FavoriteImages from './FavoriteImages';
 import HikeATrail from './HikeATrail';
-import Weather from './Weather';
 import YelpFood from './YelpFood';
 import YourMovies from './YourMovies';
 import CityExplorer from './CityExplorer/CityExplorerMain';
@@ -52,9 +51,7 @@ class App extends React.Component {
                 <HikeATrail />
               </Route>
 
-              <Route path="/Weather">
-                <Weather />
-              </Route>
+              
 
               <Route path="/YelpFood">
                 <YelpFood />

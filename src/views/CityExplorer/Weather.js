@@ -1,23 +1,55 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Container, Card, Button, Row } from 'react-bootstrap';
+
+
 
 export class Weather extends Component {
   
   render() {
-    console.log('props weather: ', this.props.weather['city_name']);
+    // console.log('weather page ', this.props.weather.map( weatherObject => weatherObject.date));
+    // console.log('weather page ', this.props.weather.map( weatherObject => weatherObject));
+    // console.log('location prop', this.props.city);
     return (
-      <div>
-        <h3>Weather in {this.props.location.search_query}</h3>
-          {this.props.weather &&
-          <div>
-              <p>Weather Location: {this.props.weather['city_name'] }</p>
-              <p>Weather lon: {this.props.weather['lon'] }</p>
-              <p>Weather timezone: {this.props.weather['timezone'] }</p>
-              <p>Weather lat: {this.props.weather['lat'] }</p>
-              <p>Weather country_code{this.props.weather['country_code'] }</p>
-              <p>Weather state_code: {this.props.weather['state_code'] }</p> 
-          </div>
-        }
-      </div>
+     
+      this.props.weather.map((weatherObject, index) => (
+        <div key={index}>
+
+        <Container>
+        <Row>
+        <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src="https://picsum.photos/id/281/200/175" />
+          <Card.Body>
+            <Card.Title>{this.props.city}</Card.Title>
+            <Card.Text>
+            High Temperatures: {weatherObject.max_temp}
+            </Card.Text>
+            <Card.Text>
+            Todays Date: {weatherObject.date}
+            </Card.Text>
+            <Card.Text>
+            Wind Direction: {weatherObject.wind_cdir}
+            </Card.Text>
+            <Card.Text>
+            {weatherObject.description}
+            </Card.Text>
+            <Button variant="primary" href="./CityExplorer/CityExplorerMain">
+            Go Here</Button>
+          </Card.Body>
+      </Card>
+      </Row>
+    </Container>    
+        
+
+
+
+
+      
+         
+        </div>
+      ))
+      
+  
+     
     )
   }
 }
