@@ -9,6 +9,9 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 class CityExplorerMain extends React.Component {
   
+ 
+
+
   constructor(props) {
     super(props)
     this.state = {
@@ -22,7 +25,7 @@ class CityExplorerMain extends React.Component {
       weather: []
     }
   }
-
+  
   updateCitySearch = (event) => {
 
     this.setState({searchQuery: event.target.value });
@@ -83,6 +86,9 @@ class CityExplorerMain extends React.Component {
         errorMessage: err.response.status + ': ' + err.response.data.err
       });
      }
+     let envi = process.env.REACT_APP_SERVER;
+      console.log("envi",envi);
+    
     }
 
 
