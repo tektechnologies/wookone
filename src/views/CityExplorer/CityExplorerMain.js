@@ -76,7 +76,7 @@ class CityExplorerMain extends React.Component {
         params:{latitude:lat, longitude:lon, searchQuery: this.state.searchQuery}
       });
       this.setState({
-        weatherSearch: weatherSearch.data
+        weather: weatherSearch.data
       });
       
     } catch (err) {
@@ -149,6 +149,7 @@ class CityExplorerMain extends React.Component {
                 <Col>
                    <Weather 
                       weather={this.state.weather}
+                      city={this.state.location}
                     /> 
                 </Col>
             </Row>
