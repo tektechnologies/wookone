@@ -63,12 +63,14 @@ class CityExplorerMain extends React.Component {
       });
      } catch (err) {
           this.setState({
+            //handling errors on the location call
             displayMapResults :false,
             displayError: true,
             errorMessage: err.response.status + ': ' + err.response.data.err});
          }
-         console.log('3 searchedLocation.data[0].lat, searchedLocation.data[0].lon', searchedLocation.data[0].lat, searchedLocation.data[0].lon);
-        this.showWeather(searchedLocation.data[0].lat, searchedLocation.data[0].lon);
+         //this was showing code error not pretty... on search with "".
+        //  console.log('3 searchedLocation.data[0].lat, searchedLocation.data[0].lon', searchedLocation.data[0].lat, searchedLocation.data[0].lon);
+        // this.showWeather(searchedLocation.data[0].lat, searchedLocation.data[0].lon);
   }
  showWeather = async (lat, lon ) => {
    try {
@@ -81,11 +83,18 @@ class CityExplorerMain extends React.Component {
       
     } catch (err) {
         this.setState({
+          //because if we have an error we do not want to show bad data
         displayMapResults: false,
+        //let user know what is happening. maybe sell ad space here on errors and purposely build errors into system?
         displayError: true,
         errorMessage: err.response.status + ': ' + err.response.data.err
       });
+      console.log('errrrrooooor : ', err.response.status + ': ' + err.response.data.err);
      }
+     //trouble shoot the env. http://create-react-app.dev/docs/adding-custom-environment-variables/
+     //WARNING: Do not store any secrets (such as private API keys) in your React app!  
+     
+     //What do they mean React App" front end env files or.....?
      let envi = process.env.REACT_APP_SERVER;
       console.log("envi",envi);
     
