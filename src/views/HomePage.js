@@ -5,8 +5,7 @@ import {
   Row, 
   Col,
   Button,
-  Jumbotron,
-  Card } from 'react-bootstrap';
+  Jumbotron} from 'react-bootstrap';
 
 
 class HomePage extends React.Component {
