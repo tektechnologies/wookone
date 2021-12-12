@@ -4,7 +4,6 @@ import {
   Container, 
   Row, 
   Col,
-  Button,
   Jumbotron} from 'react-bootstrap';
 
 
