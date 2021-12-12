@@ -5,7 +5,7 @@ import {Col, Card, Nav, Button} from 'react-bootstrap';
 class MainWordFeed extends React.Component {
   render(){
     return(
-      <Col>
+     
        <Card>
             <Card.Header>
                 <Nav variant="pills" defaultActiveKey="#first">
@@ -26,7 +26,7 @@ class MainWordFeed extends React.Component {
               <Button variant="primary">Go somewhere</Button>
           </Card.Body>
        </Card>
-      </Col>
+      
     )
  }
 }

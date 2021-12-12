@@ -2,7 +2,7 @@ import React from 'react';
 import RightAside from './RightAside';
 import MainWordFeed from './MainWordFeed';
 import LeftAside from './LeftAside';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 
 class AppSocialPortal extends React.Component {
@@ -10,13 +10,17 @@ class AppSocialPortal extends React.Component {
   render(){
     return(
       <div id="app">
-        <Container>
-          <Row>
-            <LeftAside />
-            <MainWordFeed />
-            <RightAside />
-          </Row>
-        </Container>
+      
+            
+              <LeftAside />
+            
+           
+              <MainWordFeed />
+            
+            
+              <RightAside />
+            
+      
       </div>  
     )
   }
