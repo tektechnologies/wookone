@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import CardColumns from 'react-bootstrap/CardColumns';
 import FavoriteImages from './FavoriteImages';
 import {Form}  from 'react-bootstrap';
-import jsonData from '../assets/data/data.json'; 
 import '../assets/css/Main.css';
 
 
@@ -13,21 +12,20 @@ class ImageMain extends React.Component {
     console.log(event.target.value);
 
     const choosenPath = event.target.value;
-    let pathGallery = jsonData;
+    // let pathGallery = jsonData;
 
     console.log('choosen path: ',choosenPath);
 
     if(choosenPath){
 
-      console.log('choosen path: in the if', choosenPath);
-      console.log(jsonData);
+      // console.log('choosen path: in the if', choosenPath);
+      // console.log(jsonData);
 
-      pathGallery = jsonData.filter((path) => 
-        path.keyword === choosenPath);
+      // pathGallery = jsonData.filter((path) => 
+        // path.keyword === choosenPath);
         
     }
-    console.log('this shows the filtered json data', pathGallery);
-    this.props.displayFilteredImages(pathGallery);
+    // this.props.displayFilteredImages(pathGallery);
   };
 
 

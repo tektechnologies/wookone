@@ -3,11 +3,13 @@
 }
 .container {
   margin-top: 75px;
+  height:800px;
 }
 
 .imageContainer {
   margin: 0 auto;
   width: 1200px;
+  /*  */
 }
 
 main{

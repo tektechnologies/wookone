@@ -18,14 +18,14 @@ class HomePage extends React.Component {
           <Container fluid>
             <Row>
               <Col>
-                <Jumbotron >
-                    <h1>Login or Register, or dont...just Stay Psyched!</h1>
-                    <p>You have found wookOne, are you wook enough?</p>
+                <Jumbotron className='mt-5'>
+                    <h1>Login or Register</h1>
+                    <p>wookOne</p>
                     <p><Button variant="primary">Learn more</Button></p>
                 </Jumbotron>
               </Col>
             </Row>
-            <Card style={{ width: '18rem' }}>
+            {/* <Card style={{ width: '18rem' }}>
               <Card.Img variant="top" src="https://picsum.photos/id/281/200/175" />
                 <Card.Body>
                   <Card.Title>City Explorer</Card.Title>
@@ -35,7 +35,7 @@ class HomePage extends React.Component {
                   <Button variant="primary" href="./CityExplorer/CityExplorerMain">
                   Go Somewhere</Button>
                 </Card.Body>
-            </Card>
+            </Card> */}
           </Container>
         </div>
       </div>

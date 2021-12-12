@@ -1,7 +1,6 @@
 import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';
 import React from 'react';
 import '../assets/css/Header.css';
-import DreadLogo from '../assets/Images/wooklogo.jpeg'; 
 
 
 class Header extends React.Component {
@@ -9,9 +8,9 @@ class Header extends React.Component {
   render() {
     return(
       <Navbar className="bg-navbar" expand="lg">
-         <Navbar.Brand href="/"> 
+         {/* <Navbar.Brand href="/"> 
            <img src={DreadLogo} alt="Wook Logo" height="60px" />
-         </Navbar.Brand>
+         </Navbar.Brand> */}
 
          <Navbar.Toggle aria-controls="basic-navbar-nav" />
 
@@ -27,10 +26,10 @@ class Header extends React.Component {
               <li><Nav.Link href="/Register" > Register</Nav.Link></li>
             </ul>
             
-            <Form inline>
+            {/* <Form inline>
               <FormControl type="text" placeholder="Search" className="mr-sm-2" />
               <Button className="bg-custom-button" variant="outline-info">Search</Button>
-            </Form>
+            </Form> */}
 
           </Navbar.Collapse>
 
