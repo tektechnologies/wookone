@@ -25,7 +25,7 @@ class Header extends React.Component {
             <ul className="nav navbar-nav navbar-right">
               <li><Nav.Link href="/Login">Login</Nav.Link></li>
               <li><Nav.Link href="/Register" > Register</Nav.Link></li>
-               <li><Nav.Link href="/Register" > dashBored</Nav.Link></li>
+               <li><Nav.Link href="/Dashbored" > dashBored</Nav.Link></li>
             </ul>
             
             {/* <Form inline>
