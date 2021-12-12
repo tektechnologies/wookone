@@ -6,7 +6,7 @@ import {
   Jumbotron} from 'react-bootstrap';
 
   
-class Weather extends React.Component {
+class LocalFood extends React.Component {
   render() {
     return(
 
@@ -19,7 +19,7 @@ class Weather extends React.Component {
           <Row>
             <Col>
               <Jumbotron className='mt-2'>
-                  <h1>Weather </h1>
+                  <h1>LocalFood </h1>
                   <p>wookOne</p>
                 
               </Jumbotron>
@@ -34,4 +34,4 @@ class Weather extends React.Component {
   }
 }
 
-export default Weather;
+export default LocalFood;

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/css/Main.css';
-import {Col, Card, Nav, Button} from 'react-bootstrap';
+import { Card, Nav, Button} from 'react-bootstrap';
 
 class MainWordFeed extends React.Component {
   render(){
