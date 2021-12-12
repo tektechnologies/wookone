@@ -13,3 +13,9 @@
 main{
   margin-top: 100px;
 }
+
+ main {
+    : #c3c4d6;
+   color: #2a7d8d;
+   background-color: #a0ab9b;
+ }
