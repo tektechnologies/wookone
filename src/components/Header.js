@@ -18,12 +18,13 @@ class Header extends React.Component {
 
             <Nav className="mr-auto">
               <Nav.Link className="navbarAnchor" href="/">Home</Nav.Link>
-              <Nav.Link className="navbarAnchor" href="/AppSocialPortal">Wookin</Nav.Link>
+              <Nav.Link className="navbarAnchor" href="/AppSocialPortal">wooking</Nav.Link>
             </Nav>
 
             <ul className="nav navbar-nav navbar-right">
               <li><Nav.Link href="/Login">Login</Nav.Link></li>
               <li><Nav.Link href="/Register" > Register</Nav.Link></li>
+               <li><Nav.Link href="/Register" > dashBored</Nav.Link></li>
             </ul>
             
             {/* <Form inline>
