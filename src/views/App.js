@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import HomePage from './HomePage';
 import Login from '../components/Login';
 import Register from '../components/Register';
+import Dashbored from '../components/Dashbored';
 import AppSocialPortal from './AppSocialPortal';
 import FavoriteImageMain from './FavoriteImageMain';
 import FavoriteImages from './FavoriteImages';
@@ -31,6 +32,10 @@ class App extends React.Component {
 
               <Route path="/Register">
                 <Register />
+              </Route>
+
+              <Route path="/Dashbored">
+                <Dashbored />
               </Route>
 
               <Route path="/AppSocialPortal">
