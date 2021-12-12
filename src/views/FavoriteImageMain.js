@@ -1,14 +1,13 @@
 import React from 'react';
 import SelectedImage from './SelectedImage';
 import ImageMain from './ImageMain';
-import jsonData from '../assets/data/data.json';
 
 class FavoriteImageMain extends React.Component {
 
   constructor(props){
     super(props);
     this.state = {
-      allFavoriteImages: jsonData,
+      // allFavoriteImages: jsonData,
       displayModal: false,
       selectedFavoriteImages: {}
      
@@ -16,8 +15,8 @@ class FavoriteImageMain extends React.Component {
   }
   
 displayAsModal = (favoritePic) => {
-  const selectedFavoriteImages = jsonData.find(favoriteImage => favoriteImage.title === favoritePic);
-  this.setState({selectedFavoriteImages, displayModal: true });
+  // const selectedFavoriteImages = jsonData.find(favoriteImage => favoriteImage.title === favoritePic);
+  // this.setState({selectedFavoriteImages, displayModal: true });
 
 }
 

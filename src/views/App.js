@@ -8,8 +8,6 @@ import AppSocialPortal from './AppSocialPortal';
 import FavoriteImageMain from './FavoriteImageMain';
 import FavoriteImages from './FavoriteImages';
 import HikeATrail from './HikeATrail';
-import YelpFood from './YelpFood';
-import YourMovies from './YourMovies';
 import CityExplorer from './CityExplorer/CityExplorerMain';
 import {Switch, Route} from 'react-router-dom';
 
@@ -53,13 +51,8 @@ class App extends React.Component {
 
               
 
-              <Route path="/YelpFood">
-                <YelpFood />
-              </Route>
+             
 
-              <Route path="/YourMovies">
-                <YourMovies />
-              </Route>
 
               <Route path="/CityExplorer/CityExplorerMain">
                 <CityExplorer />

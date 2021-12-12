@@ -43,13 +43,12 @@ class CityExplorerMain extends React.Component {
 
 
   displayLatLon = async () => {
-    const locIqUrl = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATION_KEY}&q=${this.state.searchQuery}&format=json`; 
+    const locIqUrl = `https://us.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATION_KEY}&q=${this.state.searchQuery}&format=json`; 
     //click on link in inspector see object data
     console.log('1. ',locIqUrl);
 
     let searchedLocation;
     try {
-       searchedLocation =  axios.get(locIqUrl);
       // console.log('promise pending', searchedLocation);
       searchedLocation =  await axios.get(locIqUrl);
       console.log('data object 2', searchedLocation);
@@ -61,14 +60,20 @@ class CityExplorerMain extends React.Component {
         displayMapResults: true,
         displayError: false
       });
+
+      this.showWeather(searchedLocation.data[0].lat, searchedLocation.data[0].lon);
+
      } catch (err) {
+       console.log('error after catch', err);
           this.setState({
             displayMapResults :false,
             displayError: true,
-            errorMessage: err.response.status + ': ' + err.response.data.err});
+            // errorMessage: err,
+            // errorMessage: err.response.status + ': ' + err.response.data.err
+          });
          }
-         console.log('3 searchedLocation.data[0].lat, searchedLocation.data[0].lon', searchedLocation.data[0].lat, searchedLocation.data[0].lon);
-        this.showWeather(searchedLocation.data[0].lat, searchedLocation.data[0].lon);
+        //  console.log('3 searchedLocation.data[0].lat, searchedLocation.data[0].lon', searchedLocation.data[0].lat, searchedLocation.data[0].lon);
+         
   }
  showWeather = async (lat, lon ) => {
    try {
@@ -80,12 +85,14 @@ class CityExplorerMain extends React.Component {
       });
       
     } catch (err) {
+      console.log('errr res ', err.response);
         this.setState({
         displayMapResults: false,
         displayError: true,
         errorMessage: err.response.status + ': ' + err.response.data.err
       });
      }
+
      let envi = process.env.REACT_APP_SERVER;
       console.log("envi",envi);
     
