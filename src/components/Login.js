@@ -1,9 +1,43 @@
 import React from 'react';
+import {
+  Container, 
+  Row, 
+  Col,
+  Jumbotron} from 'react-bootstrap';
+
 
 class Login extends React.Component {
   render() {
     return(
-     <h1 className="content">Welcome to the login Page.</h1>
+    
+
+      <div className="container text-center">  
+      <div className="row homePageMain">
+        <Container fluid>
+          <Row>
+            <Col>
+              <Jumbotron className='mt-2'>
+                  <h1>Login</h1>
+                  <p>wookOne</p>
+                
+              </Jumbotron>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Jumbotron className='mt-5'>
+                  <h1>wookOne</h1>
+                  <p>wookOne</p>
+                
+              </Jumbotron>
+            </Col>
+          </Row>
+         
+           
+        </Container>
+      </div>
+    </div>
+
     )
   }
 }
