@@ -44,3 +44,13 @@ nav .navbar-nav  a {
   background-color: #AFBC88;
   border-color: #D7F9F1; /*set the color you want here*/
 }
+
+
+
+.navbar-light .navbar-toggler {}
+
+
+.navbar-collapse  {
+  text-align: center;
+  background-color: green;
+}
