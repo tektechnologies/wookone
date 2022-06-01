@@ -15,7 +15,7 @@ class AppSocialPortal extends React.Component {
               <LeftAside />
             
            
-              <MainWordFeed />
+              {/* <MainWordFeed /> */}
             
             
               <RightAside />

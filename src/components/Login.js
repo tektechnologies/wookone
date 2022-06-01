@@ -22,18 +22,7 @@ class Login extends React.Component {
                 
               </Jumbotron>
             </Col>
-          </Row>
-          <Row>
-            <Col>
-              <Jumbotron className='mt-5'>
-                  <h1>wookOne</h1>
-                  <p>wookOne</p>
-                
-              </Jumbotron>
-            </Col>
-          </Row>
-         
-           
+          </Row> 
         </Container>
       </div>
     </div>

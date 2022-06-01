@@ -23,7 +23,6 @@ class App extends React.Component {
             <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/Login" element={ <Login />}/>
-               
             <Route path="/Register" element={ <Register />}/>
             <Route path="/Dashbored" element={ <Dashbored />}/>
             <Route path="/AppSocialPortal" element={ <AppSocialPortal />}/>
