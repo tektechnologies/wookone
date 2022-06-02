@@ -6,17 +6,10 @@ import Login from '../components/Login';
 import Register from '../components/Register';
 import Dashbored from '../components/Dashbored';
 import AppSocialPortal from './AppSocialPortal';
-import FavoriteImageMain from './FavoriteImageMain';
-import FavoriteImages from './FavoriteImages';
 import HikeATrail from './HikeATrail';
 import Weather from './Weather';
-import LocalArt from './LocalArt';
-import SkateShop from './SkateShop';
-import FarmersMarket from './FarmersMarket';
-import LocalFood from './LocalFood';
 
-import CityExplorer from './CityExplorer/CityExplorerMain';
-import {Switch, Route} from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 
 
 
@@ -27,61 +20,16 @@ class App extends React.Component {
       <div id="app">
         <Header />
           <main>
-            <Switch>
-              <Route path="/" exact>
-                <HomePage /> 
-              </Route>
-
-              <Route path="/Login">
-                <Login />
-              </Route>
-
-              <Route path="/Register">
-                <Register />
-              </Route>
-
-              <Route path="/Dashbored">
-                <Dashbored />
-              </Route>
-
-              <Route path="/AppSocialPortal">
-                <AppSocialPortal />
-              </Route>
-
-              <Route path="/FavoriteImageMain">
-                <FavoriteImageMain />
-              </Route>
-
-              <Route path="/FavoriteImages">
-              <FavoriteImages />
-              </Route>
-
-              <Route path="/HikeATrail">
-                <HikeATrail />
-              </Route>
-              <Route path="/Weather">
-                <Weather />
-              </Route>
-              <Route path="/LocalArt">
-                <LocalArt />
-              </Route>
-              <Route path="/SkateShop">
-                <SkateShop />
-              </Route>
-              <Route path="/FarmersMarket">
-                <FarmersMarket />
-              </Route>
-              <Route path="/LocalFood">
-                <LocalFood />
-              </Route>
-
-             
-
-
-              <Route path="/CityExplorer/CityExplorerMain">
-                <CityExplorer />
-              </Route>
-            </Switch>
+            <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/Login" element={ <Login />}/>
+            <Route path="/Register" element={ <Register />}/>
+            <Route path="/Dashbored" element={ <Dashbored />}/>
+            <Route path="/AppSocialPortal" element={ <AppSocialPortal />}/>
+            <Route path="/HikeATrail"  element={ <HikeATrail /> } />
+            <Route path="/Weather"  element={ <Weather /> } />
+           
+            </Routes>
           </main>
          <Footer />
       </div>  
