@@ -28,7 +28,6 @@ class App extends React.Component {
             <Route path="/AppSocialPortal" element={ <AppSocialPortal />}/>
             <Route path="/HikeATrail"  element={ <HikeATrail /> } />
             <Route path="/Weather"  element={ <Weather /> } />
-           
             </Routes>
           </main>
          <Footer />

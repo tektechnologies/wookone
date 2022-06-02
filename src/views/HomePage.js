@@ -18,8 +18,8 @@ class HomePage extends React.Component {
             <Row>
               <Col>
                 <Jumbotron className='mt-5'>
-                    <h1>Login or Register</h1>
-                    <p>wookOne</p>
+                    <h1>Welcome to wookOne.</h1>
+                    <marquee>We hope you enjoy your time.</marquee>
                     <p><Button variant="primary">Learn more</Button></p>
                 </Jumbotron>
               </Col>
