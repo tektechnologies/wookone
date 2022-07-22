@@ -3,8 +3,7 @@ import '../assets/css/HomePage.css';
 import {
   Container, 
   Row, 
-  Col,
-  Jumbotron} from 'react-bootstrap';
+  Col} from 'react-bootstrap';
 
 
 class Dashbored extends React.Component {
@@ -16,29 +15,29 @@ class Dashbored extends React.Component {
           <Container fluid>
             <Row>
               <Col>
-                <Jumbotron className='mt-2'>
+                
                     <h1>Local</h1>
                     <p>wookOne</p>
                   
-                </Jumbotron>
+               
               </Col>
             </Row>
              <Row>
               <Col>
-                <Jumbotron className='mt-2'>
+              
                     <h1>Regional</h1>
                     <p>wookOne</p>
                     
-                </Jumbotron>
+                
               </Col>
             </Row>
              <Row>
               <Col>
-                <Jumbotron className='mt-2'>
+                
                     <h1>World</h1>
                     <p>wookOne</p>
                     
-                </Jumbotron>
+               
               </Col>
             </Row>
           </Container>

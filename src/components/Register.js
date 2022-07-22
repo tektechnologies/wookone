@@ -2,8 +2,7 @@ import React from 'react';
 import {
   Container, 
   Row, 
-  Col,
-  Jumbotron} from 'react-bootstrap';
+  Col} from 'react-bootstrap';
 
   
 class Register extends React.Component {
@@ -18,11 +17,11 @@ class Register extends React.Component {
         <Container fluid>
           <Row>
             <Col>
-              <Jumbotron className='mt-2'>
+             
                   <h1>Register</h1>
                   <p>wookOne</p>
                 
-              </Jumbotron>
+              
             </Col>
           </Row>
          

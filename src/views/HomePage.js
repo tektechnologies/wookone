@@ -1,11 +1,6 @@
 import React from 'react';
 import '../assets/css/HomePage.css';
-import {
-  Container, 
-  Row, 
-  Col,
-  Button,
-  Jumbotron} from 'react-bootstrap';
+import {Container, Row, Col, Button} from 'react-bootstrap';
 
 
 class HomePage extends React.Component {
@@ -17,11 +12,11 @@ class HomePage extends React.Component {
           <Container fluid>
             <Row>
               <Col>
-                <Jumbotron className='mt-5'>
-                    <h1>Login or Register</h1>
-                    <p>wookOne</p>
+              
+                    <h1>Welcome to wookOne.</h1>
+                  
                     <p><Button variant="primary">Learn more</Button></p>
-                </Jumbotron>
+                
               </Col>
             </Row>
             {/* <Card style={{ width: '18rem' }}>
