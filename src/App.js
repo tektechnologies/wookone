@@ -1,14 +1,15 @@
-import React from 'react';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
-import HomePage from './HomePage';
-import Login from '../components/Login';
-import Register from '../components/Register';
-import Dashbored from '../components/Dashbored';
-import AppSocialPortal from './AppSocialPortal';
-import HikeATrail from './HikeATrail';
-import Weather from './Weather';
+import './App.css';
 
+import React from 'react';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import HomePage from './views/HomePage';
+import Login from './components/Login';
+import Register from './components/Register';
+import Dashbored from './components/Dashbored';
+import AppSocialPortal from './views/AppSocialPortal';
+import HikeATrail from './views/HikeATrail';
+import Weather from './views/Weather';
 import {Routes, Route} from 'react-router-dom';
 
 
@@ -36,6 +37,7 @@ class App extends React.Component {
   }
 }
 export default App;
+
 
 
 
