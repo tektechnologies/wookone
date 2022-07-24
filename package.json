@@ -29,9 +29,7 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-     
-    ]
+    "extends": "react-app"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
